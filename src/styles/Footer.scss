@@ -1,0 +1,17 @@
+@import 'container';
+@import 'animations';
+
+.footer {
+  background: var(--background-1);
+  border-top: 1px solid var(--background-2);
+  height: 65px;
+  transition: background, border 0.3s;
+  @include fade-in;
+}
+
+.footer__container {
+  @include container;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

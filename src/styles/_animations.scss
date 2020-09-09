@@ -1,0 +1,64 @@
+@mixin fade-in {
+  animation: fadeIn 0.3s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// @keyframes fadeOut {
+//   from {
+//     opacity: 1;
+//   }
+
+//   to {
+//     opacity: 0;
+//   }
+// }
+
+@mixin zoom-in {
+  animation: zoomIn 0.3s ease-in-out both;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// @keyframes zoomOut {
+//   from {
+//     transform: scale(1);
+//   }
+
+//   to {
+//     transform: scale(0.7);
+//   }
+// }
+
+@mixin expand {
+  animation: expand 0.3s ease-in-out both;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

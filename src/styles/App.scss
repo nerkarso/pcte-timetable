@@ -1,0 +1,16 @@
+@import 'animations';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.main {
+  height: calc(100% - 132px);
+  @include fade-in;
+
+  .react-swipeable-view-container > div[data-swipeable='true'] {
+    -webkit-overflow-scrolling: touch;
+  }
+}

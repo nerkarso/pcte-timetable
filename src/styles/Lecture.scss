@@ -1,0 +1,150 @@
+@import 'colors';
+@import 'mixins';
+
+.lecture {
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.75rem 1rem;
+  user-select: none;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.025);
+  }
+
+  &:active,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.lecture__header {
+  display: flex;
+  align-items: center;
+}
+
+.lecture__time {
+  display: block;
+  line-height: 0;
+  font-weight: 500;
+  opacity: 0.75;
+  margin-left: 0.1rem;
+}
+
+.lecture__room {
+  background: scale-color(map-get($shades, 'black'), $alpha: -75);
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-left: auto;
+  letter-spacing: 0.5px;
+}
+
+.lecture__body {
+  margin-left: 2rem;
+}
+
+.lecture__footer {
+  @include truncate;
+}
+
+.lecture__subject {
+  @include truncate;
+  margin: 0.5rem auto 0.65rem;
+}
+
+.lecture__index {
+  $size: 24px;
+  background: scale-color(map-get($shades, 'black'), $alpha: -75);
+  border-radius: 50%;
+  width: $size;
+  height: $size;
+  margin-right: 5px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$gradients: (
+  'red': (
+    'start': map-get($red, 'darken-3'),
+    'end': map-get($red, 'accent-2')
+  ),
+  'yellow': (
+    'start': map-get($orange, 'darken-2'),
+    'end': map-get($amber, 'accent-3')
+  ),
+  'green': (
+    'start': map-get($green, 'darken-1'),
+    'end': map-get($light-green, 'accent-2')
+  ),
+  'teal': (
+    'start': map-get($teal, 'darken-2'),
+    'end': map-get($green, 'accent-3')
+  ),
+  'blue': (
+    'start': map-get($blue, 'darken-1'),
+    'end': map-get($cyan, 'accent-3')
+  ),
+  'indigo': (
+    'start': map-get($indigo, 'darken-3'),
+    'end': map-get($indigo, 'accent-2')
+  ),
+  'purple': (
+    'start': map-get($deep-purple, 'darken-1'),
+    'end': map-get($purple, 'accent-2')
+  ),
+  'grey': (
+    'start': map-get($blue-grey, 'lighten-1'),
+    'end': map-get($blue-grey, 'lighten-3')
+  )
+);
+
+@each $name, $color in $gradients {
+  .lecture--#{$name} {
+    background: linear-gradient(
+      45deg,
+      map-get($color, 'start') 30%,
+      map-get($color, 'end') 90%
+    );
+    box-shadow: 0 1px 6px 1px scale-color(map-get($color, 'end'), $alpha: -30);
+    color: mix(map-get($shades, 'white'), map-get($color, 'start'), 90%);
+  }
+}
+
+html[theme='dark'] {
+  .lecture {
+    box-shadow: none;
+  }
+}
+
+.lecture--selected {
+  animation-name: heartBeat;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.05);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}

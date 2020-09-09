@@ -1,0 +1,33 @@
+.floating-button {
+  $size: 60px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 10%,
+    var(--secondary) 70%
+  );
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  width: $size;
+  height: $size;
+  margin: 10px auto;
+  position: fixed;
+  bottom: 66px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background, transform 0.3s;
+
+  &:hover {
+    background: linear-gradient(
+      to bottom,
+      var(--primary) 10%,
+      var(--secondary) 80%
+    );
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}

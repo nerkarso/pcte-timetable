@@ -1,0 +1,30 @@
+@import 'colors';
+
+.list__item {
+  border-radius: 5px;
+  display: block;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin: 5px 0;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s;
+
+  &:hover {
+    background: var(--background-2);
+  }
+
+  &:active,
+  &:focus {
+    background: var(--background-3);
+  }
+
+  &.list__item--active {
+    background: linear-gradient(
+      45deg,
+      var(--primary) 30%,
+     var(--secondary) 90%
+    );
+    color: map-get($shades, 'white');
+  }
+}

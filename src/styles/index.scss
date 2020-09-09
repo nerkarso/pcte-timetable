@@ -1,0 +1,27 @@
+@import 'theme';
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}

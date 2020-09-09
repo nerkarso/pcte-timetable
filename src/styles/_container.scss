@@ -1,0 +1,4 @@
+@mixin container {
+  max-width: var(--breakpoint);
+  margin: 0 auto;
+}

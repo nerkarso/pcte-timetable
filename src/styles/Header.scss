@@ -1,0 +1,42 @@
+@import 'container';
+@import 'animations';
+
+.header {
+  background: var(--background-1);
+  border-bottom: 1px solid var(--background-2);
+  height: 65px;
+  padding: 0 1rem;
+  transition: background, border 0.3s;
+  @include fade-in;
+}
+
+.header__container {
+  @include container;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header__brand__image {
+  width: 35px;
+  margin-right: 15px;
+}
+
+.header__buttons {
+  $margin: 5px;
+
+  display: flex;
+  margin-left: -$margin;
+  margin-right: -$margin;
+
+  .button {
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+}

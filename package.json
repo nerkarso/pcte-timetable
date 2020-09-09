@@ -1,0 +1,46 @@
+{
+  "name": "pcte-timetable",
+  "version": "1.11.0",
+  "title": "PCTE Timetable",
+  "description": "A user-friendly web app of PCTE's timetable.",
+  "author": "Ner Karso",
+  "license": "UNLICENSED",
+  "homepage": "/pcte-timetable",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
+    "react-ga": "^3.1.2",
+    "react-scripts": "3.4.3",
+    "react-swipeable-views": "^0.13.9",
+    "react-swipeable-views-utils": "^0.13.9"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 and_chr version",
+      "last 1 android version",
+      "last 1 samsung version",
+      "last 1 ios_saf version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

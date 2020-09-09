@@ -1,0 +1,45 @@
+@import 'animations';
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  z-index: 99;
+  @include fade-in;
+}
+
+.modal__wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal__container {
+  background: var(--background-1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 325px;
+  margin: 0 auto;
+  @include zoom-in;
+}
+
+.modal__header {
+  border-bottom: 1px solid var(--background-2);
+  padding: 1rem;
+}
+
+.modal__body {
+  max-height: calc(100vh - 12rem);
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  overflow-y: auto;
+}
+
+.modal__footer {
+  border-top: 1px solid var(--background-2);
+  padding: 1rem;
+}

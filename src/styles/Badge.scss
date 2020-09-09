@@ -1,0 +1,11 @@
+@import './colors';
+
+.badge {
+  background: var(--primary);
+  color: map-get($shades, 'white');
+  border-radius: 5px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin-left: 5px;
+  padding: 2px 5px;
+}

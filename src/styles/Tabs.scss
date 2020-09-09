@@ -1,0 +1,57 @@
+@import 'animations';
+
+.tabs {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabs__grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  white-space: nowrap;
+  width: 100%;
+  height: 90%;
+}
+
+.tabs__grid__item {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+  position: relative;
+  outline: 0;
+  transition: color 0.3s;
+
+  &:focus {
+    color: var(--primary);
+  }
+}
+
+.tabs__grid__item--active {
+  color: var(--primary);
+
+  &:after {
+    content: '';
+    background: var(--primary);
+    border-radius: 25px;
+    box-shadow: 0 0 6px var(--primary);
+    margin: 0 auto;
+    height: 4px;
+    width: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include expand;
+  }
+}

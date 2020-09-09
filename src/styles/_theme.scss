@@ -1,0 +1,35 @@
+@import 'colors';
+
+$red: #cc2b25;
+$indigo: #1a237e;
+
+$lighten: mix(map-get($shades, 'white'), $indigo, 95%);
+$darken: mix(map-get($shades, 'black'), $indigo, 90%);
+
+:root {
+  --primary: #{$red};
+  --secondary: #{$indigo};
+  --breakpoint: 1200px;
+}
+
+html {
+  --background: #{map-get($shades, 'white')};
+  --background-1: #{map-get($shades, 'white')};
+  --background-2: #{mix(map-get($shades, 'black'), $lighten, 10%)};
+  --background-3: #{mix(map-get($shades, 'black'), $lighten, 20%)};
+  --background-4: #{mix(map-get($shades, 'black'), $lighten, 30%)};
+  --text: #{$darken};
+  --text-1: #{mix(map-get($shades, 'white'), $darken, 10%)};
+  --text-2: #{mix(map-get($shades, 'white'), $darken, 20%)};
+}
+
+html[theme='dark'] {
+  --background: #{mix(map-get($shades, 'white'), $darken, 5%)};
+  --background-1: #{mix(map-get($shades, 'white'), $darken, 10%)};
+  --background-2: #{mix(map-get($shades, 'white'), $darken, 20%)};
+  --background-3: #{mix(map-get($shades, 'white'), $darken, 30%)};
+  --background-4: #{mix(map-get($shades, 'white'), $darken, 40%)};
+  --text: #{$lighten};
+  --text-1: #{mix(map-get($shades, 'black'), $lighten, 10%)};
+  --text-2: #{mix(map-get($shades, 'black'), $lighten, 20%)};
+}
