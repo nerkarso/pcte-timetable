@@ -5,8 +5,12 @@ export default function Lecture({ day, lecture, lectureIndex }) {
   const { timeslot, subject, faculty, room } = lecture;
 
   const classNames = ['lecture'];
-  if (subject && subject.color) {
-    classNames.push(`lecture--${subject.color}`);
+  if (subject) {
+    if (subject.color) {
+      classNames.push(`lecture--${subject.color}`);
+    } else {
+      classNames.push(`lecture--${'red'}`);
+    }
   } else {
     classNames.push(`lecture--grey`);
   }
