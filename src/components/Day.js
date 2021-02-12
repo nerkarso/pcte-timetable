@@ -3,7 +3,7 @@ import '../styles/Day.scss';
 import Lecture from './Lecture';
 
 export default function Day({ name, lectures }) {
-  const Lectures = lectures.map((lecture, index) => (
+  const Lectures = lectures.length && lectures.map((lecture, index) => (
     <Lecture
       day={name}
       lecture={lecture}

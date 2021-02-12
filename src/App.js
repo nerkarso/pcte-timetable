@@ -19,7 +19,7 @@ let WelcomeView = null;
 
 export default function App() {
   const { slideIndex, changeSlideIndex } = useContext(SlideContext);
-  const handleChangeIndex = index => {
+  const handleChangeIndex = (index) => {
     changeSlideIndex(index);
   };
 
@@ -27,8 +27,8 @@ export default function App() {
   const Days =
     className &&
     schedule[className] &&
-    schedule[className].map((lectures, index) => (
-      <Day name={weekdays[index]} lectures={lectures} key={index} />
+    weekdays.map((day, index) => (
+      <Day name={day} lectures={schedule[className][index] ? schedule[className][index] : []} key={index} />
     ));
 
   const [isLoading, setIsLoading] = useState(true);
@@ -72,8 +72,7 @@ export default function App() {
                 index={slideIndex}
                 onChangeIndex={handleChangeIndex}
                 springConfig={springConfig}
-                resistance
-              >
+                resistance>
                 {Days}
               </BindKeyboardSwipeableViews>
               <FloatingButtonShowToday />
@@ -93,11 +92,11 @@ export default function App() {
 const springConfig = {
   duration: '0.5s',
   easeFunction: 'cubic-bezier(0.55, 0, 0.1, 1)',
-  delay: '0s'
+  delay: '0s',
 };
 
 const styles = {
   slideContainer: {
-    height: '100%'
-  }
+    height: '100%',
+  },
 };
