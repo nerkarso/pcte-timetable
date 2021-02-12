@@ -1,0 +1,48 @@
+<svg class="root" width="1280" height="640" viewBox="0 0 640 320"
+  xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="0" y="0" width="640" height="320">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card">
+      <div class="card-content">
+        <img class="card-logo" src="/img/icon-512.png" />
+        <p class="card-title">PCTE Timetable</p>
+        <small class="author">Keep track of PCTE college time table</small>
+      </div>
+    </div>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700');
+      .root {
+        font-family: Inter;
+        width: 640px;
+        height: 320px;
+      }
+      .card {
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+      .card-logo {
+        width: 7rem;
+      }
+      .card-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0.3rem 0 0;
+      }
+      .card-description {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+      }
+      .author {
+        opacity: 0.4;
+      }
+    </style>
+  </foreignObject>
+</svg>
