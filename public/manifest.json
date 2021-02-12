@@ -1,7 +1,7 @@
 {
   "name": "PCTE Timetable",
   "short_name": "Timetable",
-  "start_url": ".",
+  "start_url": "/pcte-timetable/",
   "display": "standalone",
   "theme_color": "#1c1d25",
   "background_color": "#1c1d25",
