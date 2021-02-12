@@ -1,0 +1,167 @@
+[
+  {
+    "code": "HVPE-101",
+    "name": "Human Values and Professional Ethics",
+    "color": "purple"
+  },
+  {
+    "code": "EVSC-101",
+    "name": "Environmental Science",
+    "color": "green"
+  },
+  {
+    "code": "EVSC",
+    "name": "Environmental Science",
+    "color": "green"
+  },
+  {
+    "code": "BSBC-201",
+    "name": "Communication-II",
+    "color": "yellow"
+  },
+  {
+    "code": "BSBC-202",
+    "name": "Mathematics-II",
+    "color": "teal"
+  },
+  {
+    "code": "BSBC-203",
+    "name": "C++",
+    "color": "purple"
+  },
+  {
+    "code": "BSBC-204",
+    "name": "Computer System Architecture",
+    "color": "blue"
+  },
+  {
+    "code": "BSBC-205",
+    "name": "Web Development",
+    "color": "red"
+  },
+  {
+    "code": "BSBC-206",
+    "name": "Lab (C++)",
+    "color": "purple"
+  },
+  {
+    "code": "BSBC-301",
+    "name": "System Analysis and Design",
+    "color": "purple"
+  },
+  {
+    "code": "BSBC-302",
+    "name": "Data Structures",
+    "color": "green"
+  },
+  {
+    "code": "BSBC-303",
+    "name": "Digital Circuits & Logic Design",
+    "color": "yellow"
+  },
+  {
+    "code": "BSBC-304",
+    "name": "Basic Accounting",
+    "color": "blue"
+  },
+  {
+    "code": "BSBC-305",
+    "name": "Lab (Data Structures)",
+    "color": "teal"
+  },
+  {
+    "code": "BSBC-306",
+    "name": "Lab (Digital Circuits & Logic Design)",
+    "color": "red"
+  },
+  {
+    "code": "BSBC-401",
+    "name": "Software Engineering",
+    "color": "purple"
+  },
+  {
+    "code": "BSBC-402",
+    "name": "Microprocessors & Microcontrollers",
+    "color": "yellow"
+  },
+  {
+    "code": "BSBC-403",
+    "name": "Operating Systems",
+    "color": "blue"
+  },
+  {
+    "code": "BSBC-404",
+    "name": "Database Management Systems",
+    "color": "green"
+  },
+  {
+    "code": "BSBC-405",
+    "name": "Lab (Microprocessors & Microcontrollers)",
+    "color": "red"
+  },
+  {
+    "code": "BSBC-406",
+    "name": "Lab (Database Management Systems)",
+    "color": "teal"
+  },
+  {
+    "code": "BSBC-501",
+    "name": "Data Warehousing & Mining",
+    "color": "blue"
+  },
+  {
+    "code": "BSBC-502",
+    "name": "Java",
+    "color": "green"
+  },
+  {
+    "code": "BSBC-503",
+    "name": "Management Information System",
+    "color": "purple"
+  },
+  {
+    "code": "BSBC-504",
+    "name": "Advanced Web Development",
+    "color": "yellow"
+  },
+  {
+    "code": "BSBC-505",
+    "name": "Lab (Java)",
+    "color": "teal"
+  },
+  {
+    "code": "BSBC-506",
+    "name": "Project Work-I",
+    "color": "red"
+  },
+  {
+    "code": "BSBC-601",
+    "name": "Principles of Management",
+    "color": "blue"
+  },
+  {
+    "code": "BSBC-602",
+    "name": "Computer Graphics",
+    "color": "green"
+  },
+  {
+    "code": "BSBC-603",
+    "name": "Computer Networks",
+    "color": "yellow"
+  },
+  {
+    "code": "BSBC-604",
+    "name": "Information Security",
+    "color": "purple"
+  },
+  {
+    "code": "BSBC-605",
+    "name": "Lab (Computer Graphics)",
+    "color": "teal"
+  },
+  {
+    "code": "BSBC-606",
+    "name": "Project Work-2",
+    "color": "red"
+  }
+]

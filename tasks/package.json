@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "export-json": "node index.js",
+    "export-pdf": "py scripts/pdf-xlsx.py",
+    "empty-xlsx": "node scripts/empty-xlsx.js",
+    "import-data-in-client": "node scripts/copy-db.js",
+    "upload": "node scripts/upload.js"
+  },
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "node-xlsx": "^0.15.0",
+    "sftp-sync-deploy": "^0.7.1"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
