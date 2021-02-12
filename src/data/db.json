@@ -1,0 +1,448 @@
+{
+  "classNames": ["BCA-3", "MCA-1"],
+  "date": "Feb 12, 2021",
+  "weekdays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "schedule": {
+    "BCA-3": [
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
+          "faculty": {
+            "code": "SW",
+            "name": "Swapan Chanana"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": {
+            "code": "BSBC-602",
+            "name": "Computer Graphics",
+            "color": "green"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
+          "faculty": {
+            "code": "SW",
+            "name": "Swapan Chanana"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "02:40 - 03:40",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": {
+            "code": "BSBC-602",
+            "name": "Computer Graphics",
+            "color": "green"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-306"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-605",
+            "name": "Lab (Computer Graphics)",
+            "color": "teal"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "EICC"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": {
+            "code": "BSBC-605",
+            "name": "Lab (Computer Graphics)",
+            "color": "teal"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "EICC"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "MT-305"
+        }
+      ]
+    ],
+    "MCA-1": [
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "PGCA1917",
+          "faculty": "VPN",
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": "PGCA1905",
+          "faculty": "IK",
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": "PGCA1953",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": "PGCA1952",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "PGCA1954",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": "PGCA1954",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": "PGCA1955",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Lang Lab"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "PGCA1954",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": "PGCA1954",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": "PGCA1951",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": "PGCA1953",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Lang Lab"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "PGCA1955",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": "PGCA1955",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": "ENG",
+          "faculty": "IK",
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": "PGCA1917",
+          "faculty": "VPN",
+          "room": "Lang Lab"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "PGCA1952",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "10:05 - 11:05",
+          "subject": "PGCA1951",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "11:25 - 12:25",
+          "subject": "ENG",
+          "faculty": "IK",
+          "room": "Lang Lab"
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": "PGCA1917",
+          "faculty": "VPN",
+          "room": "EI102"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "02:40 - 03:40",
+          "subject": "PGCA1953",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Lang Lab"
+        }
+      ]
+    ]
+  }
+}
