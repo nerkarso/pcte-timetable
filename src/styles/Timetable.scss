@@ -6,9 +6,15 @@ body,
   height: 100%;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
-  height: calc(100% - 132px);
   @include fade-in;
+
+  flex: 1;
 
   .react-swipeable-view-container > div[data-swipeable='true'] {
     -webkit-overflow-scrolling: touch;
