@@ -30,7 +30,8 @@
 
 ## Requirements
 
-- Node.js `12.x`
+- Node.js `14.x`
+- Vercel CLI `21.x`
 - Python `3.7`
 
 ## Setup
@@ -53,10 +54,18 @@ npm run export-json
 npm run import-data-in-client
 ```
 
+## Database
+
+Add this environment variable in the `.env` file.
+
+```sh
+MONGODB_URI=
+```
+
 ## Development
 
 ```sh
-yarn start
+vercel dev
 ```
 
 ## Deployment

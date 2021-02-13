@@ -11,6 +11,7 @@
     "build": "react-scripts build"
   },
   "dependencies": {
+    "mongoose": "5.11.15",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-feather": "^2.0.8",
