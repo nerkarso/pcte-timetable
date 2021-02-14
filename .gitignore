@@ -19,6 +19,7 @@ tasks/data/xlsx
 .env.test.local
 .env.production
 .env.production.local
+.vercel
 
 # logs
 npm-debug.log*
