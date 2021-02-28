@@ -9,6 +9,10 @@
 
   &:hover {
     transform: scale(1.025);
+
+    .lecture__subject {
+      @include untruncate;
+    }
   }
 
   &:active,
