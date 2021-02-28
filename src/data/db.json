@@ -933,32 +933,6 @@
             "name": "Kapil Prashar"
           },
           "room": "MT-306"
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": {
-            "code": "BSBC-605",
-            "name": "Lab (Computer Graphics)",
-            "color": "teal"
-          },
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "EICC"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": {
-            "code": "BSBC-605",
-            "name": "Lab (Computer Graphics)",
-            "color": "teal"
-          },
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "EICC"
         }
       ],
       [
@@ -1414,12 +1388,9 @@
         },
         {
           "timeslot": "10:05 - 11:05",
-          "subject": "MCA-604",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "MT-305"
+          "subject": null,
+          "faculty": null,
+          "room": null
         },
         {
           "timeslot": "11:25 - 12:25",
