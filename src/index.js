@@ -26,25 +26,28 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+serviceWorker.unregister();
+localStorage.clear();
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register({
-  onInstall: () => {
-    // Show toast update.
-    document.querySelector('#toast-update').style.display = 'block';
-  },
-  onSuccess: () => {
-    // Hide toast update.
-    document.querySelector('#toast-update').style.display = 'none';
-  },
-  onUpdate: worker => {
-    // Force the waiting service worker to become the active service worker.
-    worker.postMessage({
-      type: 'SKIP_WAITING'
-    });
+// serviceWorker.register({
+//   onInstall: () => {
+//     // Show toast update.
+//     document.querySelector('#toast-update').style.display = 'block';
+//   },
+//   onSuccess: () => {
+//     // Hide toast update.
+//     document.querySelector('#toast-update').style.display = 'none';
+//   },
+//   onUpdate: worker => {
+//     // Force the waiting service worker to become the active service worker.
+//     worker.postMessage({
+//       type: 'SKIP_WAITING'
+//     });
 
-    // Reload the web page.
-    window.location.reload(true);
-  }
-});
+//     // Reload the web page.
+//     window.location.reload(true);
+//   }
+// });
