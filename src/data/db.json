@@ -11,7 +11,7 @@
     "B.TECH-II LEET",
     "B.TECH-II"
   ],
-  "date": "March 1, 2021",
+  "date": "March 2, 2021",
   "weekdays": [
     "Monday",
     "Tuesday",
@@ -90,8 +90,11 @@
         },
         {
           "timeslot": "11:25 - 12:25",
-          "subject": "UGCA1906",
-          "faculty": "MJR",
+          "subject": "UGCA1904",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
           "room": "EICC"
         },
         {
@@ -99,6 +102,21 @@
           "subject": "UGCA1906",
           "faculty": "MJR",
           "room": "EICC"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": "UGCA1906",
+          "faculty": "MJR",
+          "room": "EICC"
+        },
+        {
+          "timeslot": "02:40 - 03:40",
+          "subject": "UGCA1903",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "PHCL"
         }
       ],
       [
@@ -323,15 +341,27 @@
         },
         {
           "timeslot": "11:25 - 12:25",
-          "subject": "BTHU103",
-          "faculty": "IK",
-          "room": "MT-304"
+          "subject": "UGCA1906",
+          "faculty": "JS",
+          "room": "EICC2"
         },
         {
           "timeslot": "12:30 - 01:30",
           "subject": "UGCA1901",
           "faculty": "DG",
           "room": "MT-304"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": "BTHU103",
+          "faculty": "IK",
+          "room": "MT-304"
+        },
+        {
+          "timeslot": "02:40 - 03:40",
+          "subject": "UGCA1906",
+          "faculty": "JS",
+          "room": "EICC2"
         }
       ],
       [
@@ -541,9 +571,9 @@
         },
         {
           "timeslot": "10:05 - 11:05",
-          "subject": "UGCA-1921",
-          "faculty": "MJR",
-          "room": "MT-305"
+          "subject": "UGCA-1923",
+          "faculty": "JS",
+          "room": "MT-303"
         },
         {
           "timeslot": "11:25 - 12:25",
@@ -551,15 +581,6 @@
           "faculty": {
             "code": "HPS",
             "name": "Harinder Pal Singh"
-          },
-          "room": "MT-305"
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "UGCA-1922",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
           },
           "room": "MT-305"
         }
@@ -1214,9 +1235,12 @@
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
+          "subject": "PGCA1945",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "MTCL-3"
         },
         {
           "timeslot": "10:05 - 11:05",
@@ -1405,12 +1429,12 @@
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": "MCA-601",
+          "subject": "MCA-605",
           "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
+            "code": "GK",
+            "name": "Gurpreet Kaur"
           },
-          "room": "MT-304"
+          "room": "MTCL-3"
         },
         {
           "timeslot": "10:05 - 11:05",
@@ -1420,12 +1444,9 @@
         },
         {
           "timeslot": "11:25 - 12:25",
-          "subject": "MCA-605",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "MTCL-3"
+          "subject": null,
+          "faculty": null,
+          "room": null
         },
         {
           "timeslot": "12:30 - 01:30",
