@@ -26,7 +26,7 @@ export default function Tabs({ weekdays }) {
   }, [slideIndex]);
 
   return (
-    <nav className="tabs">
+    <nav className="tabs tabs--bottom">
       <div className="tabs__grid">
         {weekdays.map((name, index) => (
           <button

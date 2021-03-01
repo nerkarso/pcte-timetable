@@ -20,7 +20,7 @@
 .header__brand {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  margin-right: 2rem;
 }
 
 .header__brand__image {
@@ -28,11 +28,20 @@
   margin-right: 15px;
 }
 
+.header__tabs {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .header__buttons {
   $margin: 5px;
 
   display: flex;
-  margin-left: -$margin;
+  margin-left: auto;
   margin-right: -$margin;
 
   .button {

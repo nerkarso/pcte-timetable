@@ -12,10 +12,12 @@
 
 .tabs__grid {
   display: grid;
-  grid-auto-columns: 1fr;
   grid-auto-flow: column;
   white-space: nowrap;
   width: 100%;
+}
+
+.tabs--bottom .tabs__grid {
   height: 90%;
 }
 
@@ -30,6 +32,8 @@
   padding: 1rem;
   position: relative;
   outline: 0;
+  text-align: center;
+  text-decoration: none;
   transition: color 0.3s;
 
   &:focus {
@@ -49,9 +53,16 @@
     height: 4px;
     width: 65%;
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     @include expand;
   }
+}
+
+.tabs--top .tabs__grid__item--active:after {
+  bottom: 0;
+}
+
+.tabs--bottom .tabs__grid__item--active:after {
+  top: 0;
 }

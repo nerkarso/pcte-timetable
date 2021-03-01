@@ -1,0 +1,47 @@
+@import 'container';
+
+.admin__main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-y: auto;
+}
+
+.admin__container {
+  @include container;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.admin__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.uploader {
+  border: 1px solid var(--background-2);
+  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.table-preview {
+  border-left: 1px solid var(--background-2);
+  max-height: 400px;
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    font-size: 0.75rem;
+    margin-left: -1px;
+  }
+
+  td {
+    border: 1px solid var(--background-2);
+    padding: 0.15rem;
+    white-space: nowrap;
+  }
+}
