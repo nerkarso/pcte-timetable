@@ -9,6 +9,10 @@
 
   &:hover {
     transform: scale(1.025);
+
+    .lecture__subject {
+      @include untruncate;
+    }
   }
 
   &:active,
@@ -71,45 +75,41 @@
 $gradients: (
   'red': (
     'start': map-get($red, 'darken-3'),
-    'end': map-get($red, 'accent-2')
+    'end': map-get($red, 'accent-2'),
   ),
   'yellow': (
     'start': map-get($orange, 'darken-2'),
-    'end': map-get($amber, 'accent-3')
+    'end': map-get($amber, 'accent-3'),
   ),
   'green': (
     'start': map-get($green, 'darken-1'),
-    'end': map-get($light-green, 'accent-2')
+    'end': map-get($light-green, 'accent-2'),
   ),
   'teal': (
     'start': map-get($teal, 'darken-2'),
-    'end': map-get($green, 'accent-3')
+    'end': map-get($green, 'accent-3'),
   ),
   'blue': (
     'start': map-get($blue, 'darken-1'),
-    'end': map-get($cyan, 'accent-3')
+    'end': map-get($cyan, 'accent-3'),
   ),
   'indigo': (
     'start': map-get($indigo, 'darken-3'),
-    'end': map-get($indigo, 'accent-2')
+    'end': map-get($indigo, 'accent-2'),
   ),
   'purple': (
     'start': map-get($deep-purple, 'darken-1'),
-    'end': map-get($purple, 'accent-2')
+    'end': map-get($purple, 'accent-2'),
   ),
   'grey': (
     'start': map-get($blue-grey, 'lighten-1'),
-    'end': map-get($blue-grey, 'lighten-3')
-  )
+    'end': map-get($blue-grey, 'lighten-3'),
+  ),
 );
 
 @each $name, $color in $gradients {
   .lecture--#{$name} {
-    background: linear-gradient(
-      45deg,
-      map-get($color, 'start') 30%,
-      map-get($color, 'end') 90%
-    );
+    background: linear-gradient(45deg, map-get($color, 'start') 30%, map-get($color, 'end') 90%);
     box-shadow: 0 1px 6px 1px scale-color(map-get($color, 'end'), $alpha: -30);
     color: mix(map-get($shades, 'white'), map-get($color, 'start'), 90%);
   }
