@@ -11,7 +11,7 @@
     "B.TECH-II LEET",
     "B.TECH-II"
   ],
-  "date": "March 2, 2021",
+  "date": "March 3, 2021",
   "weekdays": [
     "Monday",
     "Tuesday",
@@ -156,6 +156,15 @@
           "faculty": {
             "code": "KP",
             "name": "Kapil Prashar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "02:40 - 03:40",
+          "subject": "UGCA1903",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
           },
           "room": "MT-306"
         }
@@ -379,15 +388,15 @@
         },
         {
           "timeslot": "11:25 - 12:25",
-          "subject": "BTHU103",
-          "faculty": "IK",
-          "room": "MT-305"
-        },
-        {
-          "timeslot": "12:30 - 01:30",
           "subject": "UGCA1901",
           "faculty": "DG",
           "room": "MT-304"
+        },
+        {
+          "timeslot": "12:30 - 01:30",
+          "subject": "BTHU103",
+          "faculty": "IK",
+          "room": "MT-305"
         },
         {
           "timeslot": "01:35 - 02:35",
@@ -395,6 +404,15 @@
           "faculty": {
             "code": "KP",
             "name": "Kapil Prashar"
+          },
+          "room": "MT-306"
+        },
+        {
+          "timeslot": "02:40 - 03:40",
+          "subject": "UGCA1903",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
           },
           "room": "MT-306"
         }
@@ -613,10 +631,13 @@
         {
           "timeslot": "12:30 - 01:30",
           "subject": "UGCA-1923",
-          "faculty": {
-            "code": "HPS",
-            "name": "Harinder Pal Singh"
-          },
+          "faculty": "JS",
+          "room": "MT-303"
+        },
+        {
+          "timeslot": "01:35 - 02:35",
+          "subject": "UGCA-1921",
+          "faculty": "MJR",
           "room": "MT-303"
         }
       ],
@@ -1006,16 +1027,9 @@
         },
         {
           "timeslot": "10:05 - 11:05",
-          "subject": {
-            "code": "BSBC-602",
-            "name": "Computer Graphics",
-            "color": "green"
-          },
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "MT-306"
+          "subject": null,
+          "faculty": null,
+          "room": null
         },
         {
           "timeslot": "11:25 - 12:25",
@@ -1032,12 +1046,6 @@
         },
         {
           "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
           "subject": {
             "code": "BSBC-604",
             "name": "Information Security",
@@ -1482,12 +1490,6 @@
         },
         {
           "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
           "subject": "MCA-604",
           "faculty": {
             "code": "GK",
@@ -1857,7 +1859,7 @@
         {
           "timeslot": "11:25 - 12:25",
           "subject": "DE-CSE-Th- ",
-          "faculty": "KP  ",
+          "faculty": null,
           "room": null
         },
         {
