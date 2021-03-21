@@ -2,10 +2,9 @@
   "classNames": [
     "BCA-2A",
     "BCA-2B",
-    "BCA-3",
-    "MCA-2"
+    "BCA-3"
   ],
-  "date": "March 15, 2021",
+  "date": "March 22, 2021",
   "weekdays": [
     "Monday",
     "Tuesday",
@@ -19,194 +18,35 @@
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
+          "subject": "1921 SW",
+          "faculty": "MJR",
+          "room": "Online"
         },
         {
           "timeslot": "10:05 - 11:05",
           "subject": null,
           "faculty": null,
           "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1924 S/W Lab",
-          "faculty": "MJR",
-          "room": "PHCL"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1924 S/W Lab",
-          "faculty": "MJR",
-          "room": "PHCL"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "MT-303"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "MT-303"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "MT-303"
         },
         {
           "timeslot": "11:25 - 12:25",
           "subject": "1923 OS",
           "faculty": "JS",
-          "room": "MT-303"
+          "room": "Online"
         },
         {
           "timeslot": "12:30 - 01:30",
-          "subject": "1921 S/W ",
-          "faculty": "MJR",
-          "room": "MT-303"
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1924 S/W Lab",
-          "faculty": "MJR",
-          "room": "PHCL"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1924 S/W Lab",
-          "faculty": "MJR",
-          "room": "PHCL"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "PHCL"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "PHCL"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
           "subject": "1927 Web Des",
           "faculty": {
             "code": "GK",
             "name": "Gurpreet Kaur"
           },
-          "room": "MT-303"
+          "room": "Online"
         }
       ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "MT-303"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "1921 S/W ",
-          "faculty": "MJR",
-          "room": "MT-303"
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "MT-303"
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "MT-303"
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "PHCL"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "PHCL"
-        }
-      ]
+      [],
+      [],
+      []
     ],
     "BCA-2B": [
       [
@@ -218,535 +58,78 @@
         },
         {
           "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
+          "subject": "1921 SW",
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
         },
         {
           "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1921 S/W ",
-          "faculty": "GTK",
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
           "subject": "1923 OS",
           "faculty": {
             "code": "MSP",
             "name": "Manraj Singh Patar"
           },
-          "room": "MT-304"
+          "room": "Online"
         }
       ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "1921 S/W ",
-          "faculty": "GTK",
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1923 OS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "MT-304"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "MTCL-3"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "MTCL-3"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "MT-304"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1923 OS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "1921 S/W ",
-          "faculty": "GTK",
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "MT-304"
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "EICC"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "1925 DBMS Lab",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "EICC"
-        }
-      ]
+      [],
+      [],
+      []
     ],
     "BCA-3": [
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "604 IS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
+          "subject": {
+            "code": "BSBC-602",
+            "name": "Computer Graphics",
+            "color": "green"
           },
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "602 CG",
           "faculty": {
             "code": "KP",
             "name": "Kapil Prashar"
           },
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
-          "subject": "603 CN",
-          "faculty": "GTK",
-          "room": "ET-101"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "602 CG",
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "ET-101"
+          "room": "Online"
         },
         {
           "timeslot": "10:05 - 11:05",
-          "subject": "601 PPM",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
           "faculty": {
             "code": "NS",
             "name": "Naresh Sachdev"
           },
-          "room": "ET-101"
+          "room": "Online"
         },
         {
           "timeslot": "11:25 - 12:25",
-          "subject": "603 CN",
-          "faculty": "GTK",
-          "room": "ET-101"
+          "subject": null,
+          "faculty": null,
+          "room": null
         },
         {
           "timeslot": "12:30 - 01:30",
-          "subject": "604 IS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
           },
-          "room": "ET-101"
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
         }
       ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "602 CG",
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "603 CN",
-          "faculty": "GTK",
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
-          "subject": "604 IS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "ET-101"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "601 PPM",
-          "faculty": {
-            "code": "NS",
-            "name": "Naresh Sachdev"
-          },
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "604 IS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": "603 CN",
-          "faculty": "GTK",
-          "room": "ET-101"
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "605 G Lab",
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "EICC"
-        }
-      ]
-    ],
-    "MCA-2": [
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "603 ACA",
-          "faculty": {
-            "code": "HPS",
-            "name": "Harinder Pal Singh"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "604 STQM",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
-          "subject": "601-DWM",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "Lang Lab"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "602 CLC",
-          "faculty": "MJR",
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "601-DWM",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": "604 STQM",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "603 ACA",
-          "faculty": {
-            "code": "HPS",
-            "name": "Harinder Pal Singh"
-          },
-          "room": "Lang Lab"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
-        },
-        {
-          "timeslot": "01:35 - 02:35",
-          "subject": "604 STQM",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "02:40 - 03:40",
-          "subject": "603 ACA",
-          "faculty": {
-            "code": "HPS",
-            "name": "Harinder Pal Singh"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "03:40 - 04:40",
-          "subject": "602 CLC",
-          "faculty": "MJR",
-          "room": "Lang Lab"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "601-DWM",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "10:05 - 11:05",
-          "subject": "603 ACA",
-          "faculty": {
-            "code": "HPS",
-            "name": "Harinder Pal Singh"
-          },
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "11:25 - 12:25",
-          "subject": "602 CLC",
-          "faculty": "MJR",
-          "room": "Lang Lab"
-        },
-        {
-          "timeslot": "12:30 - 01:30",
-          "subject": "602 CLC",
-          "faculty": "MJR",
-          "room": "Lang Lab"
-        }
-      ]
+      [],
+      [],
+      []
     ]
   }
 }
