@@ -3,7 +3,7 @@
     "export-json": "node index.js",
     "export-pdf": "py scripts/pdf-xlsx.py",
     "empty-xlsx": "node scripts/empty-xlsx.js",
-    "import-data-in-client": "node scripts/copy-db.js",
+    "copy-db-to-client": "node scripts/copy-db.js",
     "upload": "node scripts/upload.js"
   },
   "devDependencies": {

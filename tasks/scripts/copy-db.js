@@ -1,6 +1,15 @@
-const copyFiles = require('../lib/copy');
+const fs = require('fs-extra');
 
-const source = './dist';
-const dest = '../src/data';
+const source = './dist/db.json';
+const dest = '../src/data/db.json';
 
-copyFiles(source, dest);
+async function copyFile() {
+  try {
+    await fs.copy(source, dest);
+    console.log('✅  Copied');
+  } catch (ex) {
+    console.error(`⛔  ${ex.message}`);
+  }
+}
+
+copyFile();
