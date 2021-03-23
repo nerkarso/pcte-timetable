@@ -10,7 +10,7 @@ import Welcome from './components/Welcome';
 import { ClassNameContext } from './context/classname-context';
 import { SlideContext } from './context/slide-context';
 import { date, schedule, weekdays } from './data/db.json';
-import { initGA, logPageView } from './googleAnalytics.js';
+import { initGA, logPageView, trackEvent } from './googleAnalytics.js';
 import { getDay, showLecture } from './helpers';
 import './styles/App.scss';
 
@@ -50,12 +50,13 @@ export default function App() {
   }, [className, isLoading]);
 
   useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      if (!window.GA_INITIALIZED) {
-        initGA();
-        window.GA_INITIALIZED = true;
-      }
-      logPageView();
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+    if (window.localStorage.getItem('className')) {
+      trackEvent('Class', 'From this Class', window.localStorage.getItem('className'));
     }
   }, []);
 

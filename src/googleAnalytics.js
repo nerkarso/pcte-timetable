@@ -6,12 +6,22 @@ import ReactGA from 'react-ga';
  */
 
 export const initGA = () => {
-  ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+  ReactGA.initialize(process.env.REACT_APP_TRACKING_ID, {
+    debug: process.env.NODE_ENV !== 'production',
+  });
 };
 
 export const logPageView = () => {
   ReactGA.set({
-    page: window.location.pathname
+    page: window.location.pathname,
   });
   ReactGA.pageview(window.location.pathname);
+};
+
+export const trackEvent = (category, action, label) => {
+  ReactGA.event({
+    category: category,
+    action: action,
+    label: label,
+  });
 };

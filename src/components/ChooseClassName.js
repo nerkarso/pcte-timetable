@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ClassNameContext } from '../context/classname-context';
 import { classNames } from '../data/db.json';
 import Modal from '../elements/Modal';
+import { trackEvent } from '../googleAnalytics';
 import useModal from '../hooks/useModal';
 import '../styles/Button.scss';
 import '../styles/List.scss';
@@ -13,6 +14,7 @@ export default function ChooseClassName({ placeholder }) {
   const handleItemClick = name => {
     changeClassName(name);
     toggleModalShown();
+    trackEvent('Class', 'Chose this Class', name);
   };
 
   return (
