@@ -4,7 +4,7 @@
     "BCA-2B",
     "BCA-3"
   ],
-  "date": "March 24, 2021",
+  "date": "March 25, 2021",
   "weekdays": [
     "Monday",
     "Tuesday",
@@ -90,7 +90,32 @@
           "room": "Online"
         }
       ],
-      []
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1927 Web Des",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1923 OS",
+          "faculty": "JS",
+          "room": "Online"
+        }
+      ]
     ],
     "BCA-2B": [
       [
@@ -177,7 +202,35 @@
           "room": "Online"
         }
       ],
-      []
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1927 Web Des",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1921 S/W ",
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1923 OS",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        }
+      ]
     ],
     "BCA-3": [
       [
@@ -309,7 +362,47 @@
           "room": "Online"
         }
       ],
-      []
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
+          "faculty": {
+            "code": "NS",
+            "name": "Naresh Sachdev"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        }
+      ]
     ]
   }
 }
