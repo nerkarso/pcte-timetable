@@ -2,9 +2,10 @@
   "classNames": [
     "BCA-2A",
     "BCA-2B",
-    "BCA-3"
+    "BCA-3",
+    "MCA-2"
   ],
-  "date": "March 25, 2021",
+  "date": "March 26, 2021",
   "weekdays": [
     "Monday",
     "Tuesday",
@@ -107,6 +108,26 @@
             "code": "LTP",
             "name": "Lata Pant"
           },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1923 OS",
+          "faculty": "JS",
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1923 OS",
+          "faculty": "JS",
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1921 S/W ",
+          "faculty": "MJR",
           "room": "Online"
         },
         {
@@ -227,6 +248,35 @@
           "faculty": {
             "code": "MSP",
             "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1921 S/W ",
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
           },
           "room": "Online"
         }
@@ -399,6 +449,69 @@
           "faculty": {
             "code": "GTK",
             "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        }
+      ]
+    ],
+    "MCA-2": [
+      [],
+      [],
+      [],
+      [],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "601 DWM",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "603 ACA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "603 ACA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
           },
           "room": "Online"
         }
