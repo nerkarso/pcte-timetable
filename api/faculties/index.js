@@ -20,7 +20,7 @@ export default withAllowedMethods(withDbConnect(handler), ['GET', 'POST', 'PATCH
  */
 async function getAll(req, res) {
   try {
-    const faculties = await FacultyModel.find();
+    const faculties = await FacultyModel.find().sort({ name: 1 });
     return res.json({ count: faculties.length, faculties });
   } catch (ex) {
     return res.status(500).json({
