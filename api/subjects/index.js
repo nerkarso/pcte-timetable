@@ -20,7 +20,7 @@ export default withAllowedMethods(withDbConnect(handler), ['GET', 'POST', 'PATCH
  */
 async function getAll(req, res) {
   try {
-    const subjects = await SubjectModel.find();
+    const subjects = await SubjectModel.find().sort({ createdAt: -1 });
     return res.json({ count: subjects.length, subjects });
   } catch (ex) {
     return res.status(500).json({
