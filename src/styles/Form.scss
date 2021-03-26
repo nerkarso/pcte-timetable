@@ -1,0 +1,45 @@
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field__label {
+  color: var(--text-3);
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-field__control {
+  background-color: var(--background);
+  border-radius: 0.35rem;
+  border: 1px solid var(--background-3);
+  box-sizing: border-box;
+  color: var(--text-1);
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.3s;
+
+  &:focus {
+    border-color: var(--primary);
+    box-shadow: inset 0 0 0 1px var(--primary);
+    outline: none;
+  }
+}
+
+.form-field__feedback {
+  color: var(--primary);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.form__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 960px) {
+  .form--details {
+    max-width: 50%;
+  }
+}
