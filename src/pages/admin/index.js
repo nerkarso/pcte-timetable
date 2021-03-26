@@ -1,5 +1,6 @@
 import Logo from 'assets/logo.png';
 import ButtonChangeTheme from 'components/ButtonChangeTheme';
+import ButtonOpenTimetable from 'components/ButtonOpenTimetable';
 import Classnames from 'pages/admin/Classnames';
 import Faculties from 'pages/admin/Faculties';
 import Subjects from 'pages/admin/Subjects';
@@ -51,6 +52,7 @@ function Header() {
           </nav>
         </div>
         <div className="header__buttons">
+          <ButtonOpenTimetable />
           <ButtonChangeTheme />
         </div>
       </div>
