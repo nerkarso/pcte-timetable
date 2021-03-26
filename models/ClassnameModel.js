@@ -11,4 +11,4 @@ const schema = new Schema({
   },
 });
 
-export default model('Classroom', schema);
+export default model('Classname', schema);

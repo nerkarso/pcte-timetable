@@ -1,1 +1,0 @@
-function handler(req, res) {}
