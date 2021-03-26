@@ -1,6 +1,6 @@
 import Logo from 'assets/logo.png';
 import ButtonChangeTheme from 'components/ButtonChangeTheme';
-import Classrooms from 'pages/admin/Classrooms';
+import Classnames from 'pages/admin/Classnames';
 import Faculties from 'pages/admin/Faculties';
 import Subjects from 'pages/admin/Subjects';
 import Timetables from 'pages/admin/Timetables';
@@ -17,7 +17,7 @@ export default function Admin() {
       <main className="main admin__main">
         <Switch>
           <Route path={`${path}`} exact component={Timetables} />
-          <Route path={`${path}/classrooms`} component={Classrooms} />
+          <Route path={`${path}/classnames`} component={Classnames} />
           <Route path={`${path}/subjects`} component={Subjects} />
           <Route path={`${path}/faculties`} component={Faculties} />
         </Switch>
@@ -39,8 +39,8 @@ function Header() {
             <NavLink to="/admin" exact className="tabs__grid__item" activeClassName="tabs__grid__item--active">
               Timetables
             </NavLink>
-            <NavLink to="/admin/classrooms" className="tabs__grid__item" activeClassName="tabs__grid__item--active">
-              Classrooms
+            <NavLink to="/admin/classnames" className="tabs__grid__item" activeClassName="tabs__grid__item--active">
+              Classnames
             </NavLink>
             <NavLink to="/admin/subjects" className="tabs__grid__item" activeClassName="tabs__grid__item--active">
               Subjects
