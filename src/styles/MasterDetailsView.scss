@@ -1,0 +1,23 @@
+.master-details-view {
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .master-details-view {
+    display: flex;
+  }
+}
+
+.master-view {
+  box-sizing: border-box;
+  flex: 1;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  max-height: calc(100vh - (66px + 71px));
+  overflow-y: auto;
+}
+
+.details-view {
+  flex: 2;
+  padding-bottom: 1rem;
+}
