@@ -18,7 +18,7 @@ const TextField = forwardRef(({ errors, label, name, ...props }, ref) => {
     <div className="form-field">
       <Label htmlFor={name}>{label}</Label>
       <Input id={name} name={name} ref={ref} {...props} />
-      {errors[name] && <div className="form-field__feedback">This field is required</div>}
+      {errors && errors[name] && <div className="form-field__feedback">This field is required</div>}
     </div>
   );
 });

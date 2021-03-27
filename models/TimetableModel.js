@@ -2,15 +2,15 @@ import { model, Schema } from 'mongoose';
 
 const schema = new Schema({
   date: {
-    type: Date,
-    required: true,
-  },
-  input: {
     type: String,
     required: true,
   },
-  output: {
+  data: {
     type: String,
+  },
+  published: {
+    type: Boolean,
+    default: false,
   },
   createdAt: {
     type: Date,
