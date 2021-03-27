@@ -137,16 +137,18 @@ function DetailsForm() {
       </div>
       <div className="form__actions form-field">
         <Button type="submit" className="button--default">
-          Save
+          {details ? 'Save' : 'Add'}
         </Button>
         {details && (
-          <Button type="button" className="button--primary" onClick={handleDelete}>
-            Delete
-          </Button>
+          <>
+            <Button type="button" className="button--secondary" onClick={clearFields}>
+              Clear
+            </Button>
+            <Button type="button" className="button--primary" onClick={handleDelete}>
+              Delete
+            </Button>
+          </>
         )}
-        <Button type="button" className="button--secondary" onClick={clearFields}>
-          New
-        </Button>
       </div>
     </form>
   );

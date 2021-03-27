@@ -104,8 +104,11 @@ function DetailsForm() {
 
   const handleDelete = () => {
     if (window.confirm('Do you really want to delete this class?')) {
-      fetch(`/api/classnames/${details._id}`, { method: 'DELETE' }).then(() => {
+      fetch(`/api/classnames/${details._id}`, {
+        method: 'DELETE',
+      }).then(() => {
         clearFields();
+        mutate();
       });
     }
   };
@@ -128,7 +131,7 @@ function DetailsForm() {
       </div>
       <div className="form__actions form-field">
         <Button type="submit" className="button--default">
-          Save
+          {details ? 'Save' : 'Add'}
         </Button>
         {details && (
           <>
