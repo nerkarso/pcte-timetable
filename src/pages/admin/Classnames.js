@@ -17,8 +17,12 @@ export default function Classnames() {
   );
 }
 
+function useAPI() {
+  return useSWR('/api/classnames');
+}
+
 function MasterViewContents() {
-  const { data, error } = useSWR('/api/classnames');
+  const { data, error } = useAPI();
 
   if (!data && !error) return <Loading />;
   if (data.error) return <div className="message">Error: {data.message}</div>;
@@ -46,16 +50,34 @@ function MasterListItem({ item, ...props }) {
     });
   };
 
-  return <ListItem onClick={handleDetails} {...item} {...props} />;
+  return <ListItem onClick={handleDetails} color={item.published ? 'green' : 'grey'} {...item} {...props} />;
 }
 
 function DetailsForm() {
+  const { mutate } = useAPI();
   const { register, handleSubmit, errors, setValue } = useForm();
+  const { details, setDetails } = useMasterDetails();
+
+  useEffect(() => {
+    if (details) {
+      setValue('name', details.name);
+      setValue('published', details.published);
+    }
+  }, [details, setValue]);
+
+  const clearFields = () => {
+    setDetails(null);
+    setValue('name', null);
+    setValue('published', null);
+  };
+
   const getBody = (data) => {
     return JSON.stringify({
       name: data.name,
+      published: data.published,
     });
   };
+
   const onSubmit = (data) => {
     if (details) {
       // Update
@@ -65,6 +87,7 @@ function DetailsForm() {
         body: getBody(data),
       }).then(() => {
         clearFields();
+        mutate();
       });
     } else {
       // Create
@@ -74,19 +97,9 @@ function DetailsForm() {
         body: getBody(data),
       }).then(() => {
         clearFields();
+        mutate();
       });
     }
-  };
-
-  const { details, setDetails } = useMasterDetails();
-  useEffect(() => {
-    if (details) {
-      setValue('name', details.name);
-    }
-  }, [details, setValue]);
-
-  const clearFields = () => {
-    setValue('name', null);
   };
 
   const handleDelete = () => {
@@ -95,11 +108,6 @@ function DetailsForm() {
         clearFields();
       });
     }
-  };
-
-  const handleNew = () => {
-    setDetails(null);
-    clearFields();
   };
 
   return (
@@ -112,18 +120,26 @@ function DetailsForm() {
         ref={register({ required: true })}
         errors={errors}
       />
+      <div className="form-field">
+        <label htmlFor="published">
+          <input type="checkbox" name="published" id="published" className="form-field__checkbox" ref={register} />
+          <span>Published</span>
+        </label>
+      </div>
       <div className="form__actions form-field">
         <Button type="submit" className="button--default">
-          Add
+          Save
         </Button>
         {details && (
-          <Button type="button" className="button--primary" onClick={handleDelete}>
-            Delete
-          </Button>
+          <>
+            <Button type="button" className="button--secondary" onClick={clearFields}>
+              Clear
+            </Button>
+            <Button type="button" className="button--primary" onClick={handleDelete}>
+              Delete
+            </Button>
+          </>
         )}
-        <Button type="button" className="button--secondary" onClick={handleNew}>
-          New
-        </Button>
       </div>
     </form>
   );

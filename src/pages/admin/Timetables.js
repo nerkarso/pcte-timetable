@@ -60,6 +60,15 @@ function MasterListItem({ item, ...props }) {
 function DetailsForm() {
   const { mutate } = useAPI();
   const { register, handleSubmit, errors, setValue } = useForm();
+  const { details, setDetails } = useMasterDetails();
+
+  useEffect(() => {
+    if (details) {
+      setValue('date', details.date);
+      setValue('data', details.data);
+      setValue('published', details.published);
+    }
+  }, [details, setValue]);
 
   const clearFields = () => {
     setDetails(null);
@@ -99,15 +108,6 @@ function DetailsForm() {
       });
     }
   };
-
-  const { details, setDetails } = useMasterDetails();
-  useEffect(() => {
-    if (details) {
-      setValue('date', details.date);
-      setValue('data', details.data);
-      setValue('published', details.published);
-    }
-  }, [details, setValue]);
 
   const handleDelete = () => {
     if (window.confirm('Do you really want to delete this timetable?')) {
