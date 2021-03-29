@@ -37,3 +37,11 @@
 .list__item__subtitle {
   color: var(--text-3);
 }
+
+.list__item__between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
