@@ -1,6 +1,6 @@
-import Logo from 'assets/logo.png';
 import ButtonOpenTimetable from 'components/ButtonOpenTimetable';
 import ButtonToggleTheme from 'components/ButtonToggleTheme';
+import Logo from 'components/Logo';
 import Classnames from 'pages/admin/Classnames';
 import Faculties from 'pages/admin/Faculties';
 import Subjects from 'pages/admin/Subjects';
@@ -32,7 +32,9 @@ function Header() {
     <header className="header">
       <div className="header__container">
         <div className="header__brand">
-          <img src={Logo} className="header__brand__image" alt="Logo" />
+          <div className="header__brand__image">
+            <Logo />
+          </div>
           <h3>Admin</h3>
         </div>
         <div className="header__tabs tabs--top">
