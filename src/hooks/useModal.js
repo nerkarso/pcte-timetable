@@ -1,14 +1,10 @@
 import { useState } from 'react';
 
-export default function useModal() {
+export function useModal() {
   const [isModalShown, setIsModalShown] = useState(false);
-
-  function toggleModalShown() {
-    setIsModalShown(!isModalShown);
-  }
 
   return {
     isModalShown,
-    toggleModalShown
+    toggleModalShown: () => setIsModalShown(!isModalShown),
   };
 }

@@ -1,6 +1,6 @@
 import useSWR from 'swr';
 
-export default function useLatestTimetable() {
+export function useLatestTimetable() {
   const { data, error } = useSWR('/api/timetables/latest');
 
   return {

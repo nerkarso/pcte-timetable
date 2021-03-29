@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Lecture.scss';
+import 'styles/Lecture.scss';
 
 export default function Lecture({ day, lecture, lectureIndex }) {
   const { timeslot, subject, faculty, room } = lecture;
@@ -24,9 +24,7 @@ export default function Lecture({ day, lecture, lectureIndex }) {
       </header>
       {subject && (
         <div className="lecture__body">
-          <h4 className="lecture__subject">
-            {typeof subject === 'object' ? subject.name : subject}
-          </h4>
+          <h4 className="lecture__subject">{typeof subject === 'object' ? subject.name : subject}</h4>
           <p className="lecture__footer">
             {subject && typeof subject === 'object' && (
               <>

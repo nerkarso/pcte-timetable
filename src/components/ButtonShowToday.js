@@ -1,60 +1,54 @@
-import React, { useContext } from 'react';
+import Modal from 'elements/Modal';
+import Toast from 'elements/Toast';
+import { getDay, showLecture } from 'helpers';
+import { useSlide } from 'hooks/SlideContext';
+import { useModal } from 'hooks/useModal';
+import { useToast } from 'hooks/useToast';
+import React from 'react';
 import { Calendar } from 'react-feather';
-import { SlideContext } from '../context/slide-context';
-import Button from '../elements/Button';
-import Modal from '../elements/Modal';
-import useModal from '../hooks/useModal';
-
-let headerTitle;
-let closeTitle;
-let modalBody;
+import 'styles/FloatingButton.scss';
 
 export default function ButtonShowToday() {
+  const { isToastShown, setToastShown } = useToast();
   const { isModalShown, toggleModalShown } = useModal();
-  const { slideIndex, changeSlideIndex } = useContext(SlideContext);
+  const { slideIndex, setSlideIndex } = useSlide();
+
+  let headerTitle;
+  let closeTitle;
+  let modalBody;
 
   const showToday = () => {
-    const today = new Date();
-    const thisDay = today.getDay() - 1;
-
-    if (thisDay === slideIndex) {
-      headerTitle = `Today`;
-      closeTitle = 'Ok';
-      modalBody = (
-        <>
-          <p>These are the lectures for today.</p>
-          <p>Have a nice day.</p>
-        </>
-      );
-
-      toggleModalShown();
-    } else if (thisDay === -1) {
+    if (getDay() === slideIndex) {
+      showLecture();
+      setToastShown(true);
+      setTimeout(() => setToastShown(false), 3000);
+    } else if (getDay() === -1) {
       headerTitle = 'Free';
-      closeTitle = 'Thanks';
+      closeTitle = 'Okay';
       modalBody = (
         <>
           <p>There are no lectures today.</p>
           <p>Enjoy your day.</p>
         </>
       );
-
       toggleModalShown();
     } else {
-      changeSlideIndex(thisDay);
+      setSlideIndex(getDay());
+      setTimeout(showLecture, 1000);
     }
   };
 
   return (
     <>
-      <Button title="Show today" onClick={showToday}>
-        <Calendar color="var(--text)" size={24} />
-      </Button>
+      <button className="floating-button" title="Show today" onClick={showToday}>
+        <Calendar color="white" size={24} />
+      </button>
+      <Toast isToastShown={isToastShown}>This is today</Toast>
       <Modal
         headerTitle={headerTitle}
         closeTitle={closeTitle}
         isModalShown={isModalShown}
-        toggleModalShown={toggleModalShown}
-      >
+        toggleModalShown={toggleModalShown}>
         {modalBody}
       </Modal>
     </>

@@ -3,7 +3,7 @@ import MasterDetailsView from 'components/MasterDetailsView';
 import Button from 'elements/Button';
 import Loading from 'elements/Loading';
 import TextField from 'elements/TextField';
-import useMasterDetails from 'hooks/useMasterDetails';
+import { useMasterDetails } from 'hooks/MasterDetailsContext';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';

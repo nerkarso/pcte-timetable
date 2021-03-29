@@ -1,4 +1,4 @@
-import { MasterDetailsProvider } from 'hooks/MasterDetailsContext';
+import MasterDetailsProvider from 'hooks/MasterDetailsContext';
 import React from 'react';
 import 'styles/MasterDetailsView.scss';
 

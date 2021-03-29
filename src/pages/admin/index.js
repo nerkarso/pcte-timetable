@@ -1,6 +1,6 @@
 import Logo from 'assets/logo.png';
-import ButtonChangeTheme from 'components/ButtonChangeTheme';
 import ButtonOpenTimetable from 'components/ButtonOpenTimetable';
+import ButtonToggleTheme from 'components/ButtonToggleTheme';
 import Classnames from 'pages/admin/Classnames';
 import Faculties from 'pages/admin/Faculties';
 import Subjects from 'pages/admin/Subjects';
@@ -53,7 +53,7 @@ function Header() {
         </div>
         <div className="header__buttons">
           <ButtonOpenTimetable />
-          <ButtonChangeTheme />
+          <ButtonToggleTheme />
         </div>
       </div>
     </header>

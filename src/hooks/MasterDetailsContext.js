@@ -1,15 +1,15 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
-export const MasterDetailsContext = createContext(null);
+const MasterDetailsContext = createContext(null);
 
-export function MasterDetailsProvider({ children }) {
-  const [details, setDetailState] = useState(null);
-  const setDetails = (value) => setDetailState(value);
-  const resetDetails = () => setDetails(null);
+export const useMasterDetails = () => useContext(MasterDetailsContext);
+
+export default function MasterDetailsProvider({ children }) {
+  const [state, setState] = useState(null);
+
+  const setDetails = (details) => setState(details);
 
   return (
-    <MasterDetailsContext.Provider value={{ details, setDetails, resetDetails }}>
-      {children}
-    </MasterDetailsContext.Provider>
+    <MasterDetailsContext.Provider value={{ details: state, setDetails }}>{children}</MasterDetailsContext.Provider>
   );
 }

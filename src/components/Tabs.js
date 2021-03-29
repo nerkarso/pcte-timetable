@@ -1,15 +1,14 @@
-import { SlideContext } from 'context/slide-context';
 import { weekdays } from 'helpers';
-import React, { useContext, useLayoutEffect } from 'react';
+import { useSlide } from 'hooks/SlideContext';
+import React, { useLayoutEffect } from 'react';
 import 'styles/Tabs.scss';
 
 export default function Tabs() {
-  const { slideIndex, changeSlideIndex } = useContext(SlideContext);
+  const { slideIndex, setSlideIndex } = useSlide();
 
   useLayoutEffect(() => {
     try {
       const buttonIsActive = document.querySelector('.tabs__grid__item--active');
-
       /**
        * Element.scrollIntoView()
        * https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
@@ -31,7 +30,7 @@ export default function Tabs() {
           <button
             className={`tabs__grid__item${slideIndex === index ? ' tabs__grid__item--active' : ''}`}
             title={name}
-            onClick={() => changeSlideIndex(index)}
+            onClick={() => setSlideIndex(index)}
             key={name}>
             {name}
           </button>

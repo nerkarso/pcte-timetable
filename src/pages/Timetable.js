@@ -1,11 +1,11 @@
+import ButtonShowToday from 'components/ButtonShowToday';
 import DayView from 'components/DayView';
-import FloatingButtonShowToday from 'components/FloatingButtonShowToday';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import Tabs from 'components/Tabs';
-import { SlideContext } from 'context/slide-context';
 import { weekdays } from 'helpers';
-import React, { useContext } from 'react';
+import { useSlide } from 'hooks/SlideContext';
+import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { bindKeyboard } from 'react-swipeable-views-utils';
 import 'styles/Timetable.scss';
@@ -17,7 +17,7 @@ export default function Timetable() {
     <>
       <Header />
       <SwipeableViewArea />
-      <FloatingButtonShowToday />
+      <ButtonShowToday />
       <Footer>
         <Tabs />
       </Footer>
@@ -26,7 +26,7 @@ export default function Timetable() {
 }
 
 function SwipeableViewArea() {
-  const { slideIndex, changeSlideIndex } = useContext(SlideContext);
+  const { slideIndex, setSlideIndex } = useSlide();
 
   return (
     <BindKeyboardSwipeableViews
@@ -35,7 +35,7 @@ function SwipeableViewArea() {
         height: '100%',
       }}
       index={slideIndex}
-      onChangeIndex={(index) => changeSlideIndex(index)}
+      onChangeIndex={(index) => setSlideIndex(index)}
       springConfig={{
         duration: '0.5s',
         easeFunction: 'cubic-bezier(0.55, 0, 0.1, 1)',

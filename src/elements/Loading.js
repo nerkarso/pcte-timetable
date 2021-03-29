@@ -1,10 +1,10 @@
 import React from 'react';
 import 'styles/Loading.scss';
 
-export default function Loading({ text }) {
+export default function Loading({ children }) {
   return (
     <div className="loading">
-      {text && <p className="loading__text">{text}</p>}
+      {children && <p className="loading__text">{children}</p>}
       <div className="loading__bar">
         <div className="loading__indicator"></div>
       </div>

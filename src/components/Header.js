@@ -1,9 +1,9 @@
+import Logo from 'assets/logo.png';
+import ButtonChooseClassname from 'components/ButtonChooseClassname';
+import ButtonShowInfo from 'components/ButtonShowInfo';
+import ButtonToggleTheme from 'components/ButtonToggleTheme';
 import React from 'react';
-import Logo from '../assets/logo.png';
-import '../styles/Header.scss';
-import ButtonChangeTheme from './ButtonChangeTheme';
-import ButtonShowInfo from './ButtonShowInfo';
-import ChooseClassName from './ChooseClassName';
+import 'styles/Header.scss';
 
 export default function Header() {
   return (
@@ -11,11 +11,11 @@ export default function Header() {
       <div className="header__container">
         <div className="header__brand">
           <img src={Logo} className="header__brand__image" alt="Logo" />
-          <ChooseClassName placeholder="Class" />
+          <ButtonChooseClassname />
         </div>
         <div className="header__buttons">
           <ButtonShowInfo />
-          <ButtonChangeTheme />
+          <ButtonToggleTheme />
         </div>
       </div>
     </header>

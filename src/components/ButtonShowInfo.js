@@ -1,8 +1,8 @@
 import Button from 'elements/Button';
 import Loading from 'elements/Loading';
 import Modal from 'elements/Modal';
-import useLatestTimetable from 'hooks/useLatestTimetable';
-import useModal from 'hooks/useModal';
+import { useLatestTimetable } from 'hooks/useLatestTimetable';
+import { useModal } from 'hooks/useModal';
 import React from 'react';
 import { Info } from 'react-feather';
 import 'styles/List.scss';
@@ -35,8 +35,8 @@ function LatestDate() {
   const { data, error, loading } = useLatestTimetable();
 
   if (loading) return <Loading />;
-  if (data.error || error) return <i>Error</i>;
+  if (error || data.error) return <i>Error</i>;
   if (!data.date) return <i>None</i>;
 
-  return <b>{data.date}</b>;
+  return <b>{new Date(data.date).toDateString()}</b>;
 }
