@@ -1,11 +1,13 @@
 {
   "classNames": [
+    "BCA-1A",
+    "BCA-1B",
     "BCA-2A",
     "BCA-2B",
     "BCA-3",
-    "MCA-2"
+    "MCA-1"
   ],
-  "date": "March 27, 2021",
+  "date": "March 30, 2021",
   "weekdays": [
     "Monday",
     "Tuesday",
@@ -15,23 +17,308 @@
     "Saturday"
   ],
   "schedule": {
-    "BCA-2A": [
+    "BCA-1A": [
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": "1921 SW",
-          "faculty": "MJR",
+          "subject": "1909-C++",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
           "room": "Online"
         },
         {
           "timeslot": "10:15 - 11:15",
+          "subject": "1908-CSA",
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
           "subject": null,
           "faculty": null,
           "room": null
         },
         {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1910-C++Lab",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1912-CSA-Lab",
+          "faculty": "MJR",
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1909-C++",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": null,
+          "faculty": null,
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1912-CSA-Lab",
+          "faculty": "MJR",
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1910-C++Lab",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "BMPD",
+          "faculty": null,
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1908-CSA",
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "Online"
+        }
+      ]
+    ],
+    "BCA-1B": [
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1908-CSA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1909-C++",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1910-C++Lab",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1912-CSA-Lab",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1927 Web Des",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1909-C++",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1912-CSA-Lab",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1910-C++Lab",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1908-CSA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "BMPD",
+          "faculty": null,
+          "room": null
+        }
+      ]
+    ],
+    "BCA-2A": [
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1921 S/W ",
+          "faculty": "MJR",
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
           "timeslot": "11:30 - 12:30",
           "subject": "1923 OS",
+          "faculty": "JS",
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1928 Web Des Lab",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1921 S/W ",
+          "faculty": "MJR",
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1925-DBMS Lab",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1928 Web Des Lab",
+          "faculty": {
+            "code": "GK",
+            "name": "Gurpreet Kaur"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1923 OS",
+          "faculty": "JS",
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1926-OS Lab",
           "faculty": "JS",
           "room": "Online"
         },
@@ -48,7 +335,7 @@
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": "1922 DBMS",
+          "subject": "1925-DBMS Lab",
           "faculty": {
             "code": "LTP",
             "name": "Lata Pant"
@@ -57,29 +344,6 @@
         },
         {
           "timeslot": "10:15 - 11:15",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1921 S/W ",
-          "faculty": "MJR",
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
           "subject": "1923 OS",
           "faculty": "JS",
           "room": "Online"
@@ -89,16 +353,22 @@
           "subject": "1921 S/W ",
           "faculty": "MJR",
           "room": "Online"
-        }
-      ],
-      [
+        },
         {
-          "timeslot": "09:00 - 10:00",
+          "timeslot": "12:30 - 13:30",
           "subject": "1927 Web Des",
           "faculty": {
             "code": "GK",
             "name": "Gurpreet Kaur"
           },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1924 S/W Lab",
+          "faculty": "MJR",
           "room": "Online"
         },
         {
@@ -112,51 +382,37 @@
         },
         {
           "timeslot": "11:30 - 12:30",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
           "subject": "1921 S/W ",
           "faculty": "MJR",
           "room": "Online"
         },
         {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1923 OS",
-          "faculty": "JS",
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
-          "subject": "1921 S/W ",
-          "faculty": "MJR",
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
+          "timeslot": "12:30 - 13:30",
           "subject": "1927 Web Des",
           "faculty": {
-            "code": "GK",
-            "name": "Gurpreet Kaur"
+            "code": "LTP",
+            "name": "Lata Pant"
           },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1926-OS Lab",
+          "faculty": "JS",
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1924 S/W Lab",
+          "faculty": "MJR",
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1923 OS",
+          "faculty": "JS",
           "room": "Online"
         }
       ]
@@ -165,124 +421,166 @@
       [
         {
           "timeslot": "09:00 - 10:00",
+          "subject": "1928 Web Des Lab",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1923 OS",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1921 S/W ",
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1921 S/W ",
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1925-DBMS Lab",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1923 OS",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1923 OS",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1922 DBMS",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1926-OS Lab",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1927 Web Des",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1925-DBMS Lab",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1928 Web Des Lab",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1927 Web Des",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
           "subject": null,
           "faculty": null,
           "room": null
         },
         {
-          "timeslot": "10:15 - 11:15",
-          "subject": "1921 SW",
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1923 OS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
-          "subject": "1921 SW",
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1923 OS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1923 OS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
+          "timeslot": "13:30 - 14:30",
           "subject": "1921 S/W ",
           "faculty": {
             "code": "GTK",
             "name": "Gurjyot Kaur"
           },
           "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "Online"
         }
       ],
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": "1927 Web Des",
-          "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
-          "subject": "1921 S/W ",
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1923 OS",
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": "1921 S/W ",
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
+          "subject": null,
+          "faculty": null,
           "room": "Online"
         },
         {
@@ -296,17 +594,6 @@
         },
         {
           "timeslot": "11:30 - 12:30",
-          "subject": "1922 DBMS",
-          "faculty": {
-            "code": "HNK",
-            "name": "Heena Kalra"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
           "subject": "1921 S/W ",
           "faculty": {
             "code": "GTK",
@@ -315,8 +602,19 @@
           "room": "Online"
         },
         {
-          "timeslot": "10:15 - 11:15",
-          "subject": "1923 OS",
+          "timeslot": "12:30 - 13:30",
+          "subject": "1924 S/W Lab",
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1926-OS Lab",
           "faculty": {
             "code": "MSP",
             "name": "Manraj Singh Patar"
@@ -324,11 +622,20 @@
           "room": "Online"
         },
         {
-          "timeslot": "11:30 - 12:30",
-          "subject": "1927 Web Des",
+          "timeslot": "10:15 - 11:15",
+          "subject": "1924 S/W Lab",
           "faculty": {
-            "code": "LTP",
-            "name": "Lata Pant"
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1923 OS",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
           },
           "room": "Online"
         }
@@ -339,6 +646,148 @@
         {
           "timeslot": "09:00 - 10:00",
           "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": {
+            "code": "BSBC-602",
+            "name": "Computer Graphics",
+            "color": "green"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-602",
+            "name": "Computer Graphics",
+            "color": "green"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
+          "faculty": {
+            "code": "NS",
+            "name": "Naresh Sachdev"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
+            "code": "BSBC-603",
+            "name": "Computer Networks",
+            "color": "yellow"
+          },
+          "faculty": {
+            "code": "GTK",
+            "name": "Gurjyot Kaur"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": {
+            "code": "BSBC-601",
+            "name": "Principles of Management",
+            "color": "blue"
+          },
+          "faculty": {
+            "code": "NS",
+            "name": "Naresh Sachdev"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": {
+            "code": "BSBC-602",
+            "name": "Computer Graphics",
+            "color": "green"
+          },
+          "faculty": {
+            "code": "KP",
+            "name": "Kapil Prashar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": {
             "code": "BSBC-602",
             "name": "Computer Graphics",
             "color": "green"
@@ -364,9 +813,16 @@
         },
         {
           "timeslot": "11:30 - 12:30",
-          "subject": null,
-          "faculty": null,
-          "room": null
+          "subject": {
+            "code": "BSBC-604",
+            "name": "Information Security",
+            "color": "purple"
+          },
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
         },
         {
           "timeslot": "12:30 - 13:30",
@@ -386,88 +842,6 @@
         {
           "timeslot": "09:00 - 10:00",
           "subject": {
-            "code": "BSBC-602",
-            "name": "Computer Graphics",
-            "color": "green"
-          },
-          "faculty": {
-            "code": "KP",
-            "name": "Kapil Prashar"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
-          "subject": {
-            "code": "BSBC-604",
-            "name": "Information Security",
-            "color": "purple"
-          },
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": {
-            "code": "BSBC-603",
-            "name": "Computer Networks",
-            "color": "yellow"
-          },
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": {
-            "code": "BSBC-603",
-            "name": "Computer Networks",
-            "color": "yellow"
-          },
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
-          "subject": {
-            "code": "BSBC-604",
-            "name": "Information Security",
-            "color": "purple"
-          },
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "11:30 - 12:30",
-          "subject": {
-            "code": "BSBC-601",
-            "name": "Principles of Management",
-            "color": "blue"
-          },
-          "faculty": {
-            "code": "NS",
-            "name": "Naresh Sachdev"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": {
             "code": "BSBC-604",
             "name": "Information Security",
             "color": "purple"
@@ -490,87 +864,44 @@
             "name": "Naresh Sachdev"
           },
           "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": null,
+          "faculty": null,
+          "room": null
         },
         {
           "timeslot": "11:30 - 12:30",
-          "subject": {
-            "code": "BSBC-603",
-            "name": "Computer Networks",
-            "color": "yellow"
-          },
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": {
-            "code": "BSBC-604",
-            "name": "Information Security",
-            "color": "purple"
-          },
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
+          "subject": null,
+          "faculty": null,
+          "room": null
         },
         {
-          "timeslot": "10:15 - 11:15",
+          "timeslot": "12:30 - 13:30",
           "subject": {
-            "code": "BSBC-603",
-            "name": "Computer Networks",
-            "color": "yellow"
+            "code": "BSBC-606",
+            "name": "Project Work-2",
+            "color": "red"
           },
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
-          "room": "Online"
-        }
-      ],
-      [
-        {
-          "timeslot": "09:00 - 10:00",
-          "subject": {
-            "code": "BSBC-604",
-            "name": "Information Security",
-            "color": "purple"
-          },
-          "faculty": {
-            "code": "MSP",
-            "name": "Manraj Singh Patar"
-          },
-          "room": "Online"
-        },
-        {
-          "timeslot": "10:15 - 11:15",
-          "subject": {
-            "code": "BSBC-603",
-            "name": "Computer Networks",
-            "color": "yellow"
-          },
-          "faculty": {
-            "code": "GTK",
-            "name": "Gurjyot Kaur"
-          },
+          "faculty": "Mentor",
           "room": "Online"
         }
       ]
     ],
-    "MCA-2": [
-      [],
-      [],
-      [],
-      [],
+    "MCA-1": [
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": "601 DWM",
+          "subject": "1909 WT",
           "faculty": {
             "code": "HNK",
             "name": "Heena Kalra"
@@ -579,16 +910,25 @@
         },
         {
           "timeslot": "10:15 - 11:15",
-          "subject": "603 ACA",
+          "subject": "1932 ISCL",
           "faculty": {
-            "code": "HPS",
-            "name": "Harinder Pal Singh"
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
           },
           "room": "Online"
         },
         {
           "timeslot": "11:30 - 12:30",
-          "subject": "603 ACA",
+          "subject": "1920 DAA",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1957 LA Lab",
           "faculty": {
             "code": "HPS",
             "name": "Harinder Pal Singh"
@@ -599,13 +939,16 @@
       [
         {
           "timeslot": "09:00 - 10:00",
-          "subject": "602 CLC",
-          "faculty": "MJR",
+          "subject": "1932 ISCL",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
           "room": "Online"
         },
         {
           "timeslot": "10:15 - 11:15",
-          "subject": "601 DWM",
+          "subject": "1909 WT",
           "faculty": {
             "code": "HNK",
             "name": "Heena Kalra"
@@ -614,10 +957,195 @@
         },
         {
           "timeslot": "11:30 - 12:30",
-          "subject": "603 ACA",
+          "subject": null,
+          "faculty": null,
+          "room": null
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1920 DAA",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1918 AJ",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1956 LA",
           "faculty": {
             "code": "HPS",
             "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1922 AJ Lab",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1909 WT",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1956 LA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1909 WT",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1920 DAA",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1932 ISCL",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "13:30 - 14:30",
+          "subject": "1957 LA Lab",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1918 AJ",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1956 LA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1918 AJ",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1914 WT Lab",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "13:30 - 14:30",
+          "subject": "1932 ISCL",
+          "faculty": {
+            "code": "MSP",
+            "name": "Manraj Singh Patar"
+          },
+          "room": "Online"
+        }
+      ],
+      [
+        {
+          "timeslot": "09:00 - 10:00",
+          "subject": "1918 AJ",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "10:15 - 11:15",
+          "subject": "1956 LA",
+          "faculty": {
+            "code": "HPS",
+            "name": "Harinder Pal Singh"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "11:30 - 12:30",
+          "subject": "1914 WT Lab",
+          "faculty": {
+            "code": "HNK",
+            "name": "Heena Kalra"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "12:30 - 13:30",
+          "subject": "1922 AJ Lab",
+          "faculty": {
+            "code": "LTP",
+            "name": "Lata Pant"
+          },
+          "room": "Online"
+        },
+        {
+          "timeslot": "13:30 - 14:30",
+          "subject": "1920 DAA",
+          "faculty": {
+            "code": "ALM",
+            "name": "Arti Lakhanpal Malhotra"
           },
           "room": "Online"
         }
