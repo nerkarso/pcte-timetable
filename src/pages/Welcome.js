@@ -1,10 +1,19 @@
 import ButtonChooseClassname from 'components/ButtonChooseClassname';
 import Logo from 'components/Logo';
+import { initGA, logPageView } from 'googleAnalytics';
 import { useLatestTimetable } from 'hooks/useLatestTimetable';
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'styles/Welcome.scss';
 
 export default function Welcome() {
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView('Welcome');
+  }, []);
+
   return (
     <section className="welcome">
       <Logo width={48} />

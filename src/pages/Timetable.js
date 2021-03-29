@@ -3,9 +3,10 @@ import DayView from 'components/DayView';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import Tabs from 'components/Tabs';
+import { initGA, logPageView, trackEvent } from 'googleAnalytics';
 import { weekdays } from 'helpers';
 import { useSlide } from 'hooks/SlideContext';
-import React from 'react';
+import React, { useEffect } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { bindKeyboard } from 'react-swipeable-views-utils';
 import 'styles/Timetable.scss';
@@ -13,6 +14,17 @@ import 'styles/Timetable.scss';
 const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 export default function Timetable() {
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView('Timetable');
+    if (window.localStorage.getItem('classname')) {
+      trackEvent('Class', 'From this Class', window.localStorage.getItem('classname'));
+    }
+  }, []);
+
   return (
     <>
       <Header />

@@ -1,5 +1,6 @@
 import Loading from 'elements/Loading';
 import Modal from 'elements/Modal';
+import { trackEvent } from 'googleAnalytics';
 import { useClassname } from 'hooks/ClassnameContext';
 import { useLatestTimetable } from 'hooks/useLatestTimetable';
 import { useModal } from 'hooks/useModal';
@@ -34,6 +35,7 @@ export default function ButtonChooseClassname() {
               className={`list__item${classname === item.name ? ' list__item--active' : ''}`}
               onClick={() => {
                 setClassname(item.name);
+                trackEvent('Class', 'Chose this Class', item.name);
                 history.push('/');
               }}
               key={item._id}>
