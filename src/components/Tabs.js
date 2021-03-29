@@ -1,15 +1,14 @@
+import { SlideContext } from 'context/slide-context';
+import { weekdays } from 'helpers';
 import React, { useContext, useLayoutEffect } from 'react';
-import { SlideContext } from '../context/slide-context';
-import '../styles/Tabs.scss';
+import 'styles/Tabs.scss';
 
-export default function Tabs({ weekdays }) {
+export default function Tabs() {
   const { slideIndex, changeSlideIndex } = useContext(SlideContext);
 
   useLayoutEffect(() => {
     try {
-      const buttonIsActive = document.querySelector(
-        '.tabs__grid__item--active'
-      );
+      const buttonIsActive = document.querySelector('.tabs__grid__item--active');
 
       /**
        * Element.scrollIntoView()
@@ -30,13 +29,10 @@ export default function Tabs({ weekdays }) {
       <div className="tabs__grid">
         {weekdays.map((name, index) => (
           <button
-            className={`tabs__grid__item${
-              slideIndex === index ? ' tabs__grid__item--active' : ''
-            }`}
+            className={`tabs__grid__item${slideIndex === index ? ' tabs__grid__item--active' : ''}`}
             title={name}
             onClick={() => changeSlideIndex(index)}
-            key={name}
-          >
+            key={name}>
             {name}
           </button>
         ))}

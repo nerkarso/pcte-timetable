@@ -1,9 +1,9 @@
-import { weekdays } from '../data/db.json';
+export const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 /**
  * Get day of the week
  */
-const getDay = () => {
+export const getDay = () => {
   // Sunday - Saturday (0 - 6)
   let thisDay = new Date().getDay();
   // Monday - Sunday (0 - -1)
@@ -12,7 +12,7 @@ const getDay = () => {
   return thisDay;
 };
 
-const showLecture = () => {
+export const showLecture = () => {
   const now = new Date();
   const thisDay = now.getDay() - 1;
   const thisHour = now.getHours();
@@ -72,9 +72,7 @@ const showLecture = () => {
   }
 
   try {
-    const lecture = document.querySelector(
-      `#${weekdays[thisDay]}-${lectureIndex}`
-    );
+    const lecture = document.querySelector(`#${weekdays[thisDay]}-${lectureIndex}`);
 
     if (lecture === null) return;
 
@@ -82,7 +80,7 @@ const showLecture = () => {
       lecture.scrollIntoView({
         behavior: 'smooth',
         block: 'center',
-        inline: 'center'
+        inline: 'center',
       });
     }
 
@@ -100,5 +98,3 @@ const showLecture = () => {
     // Element does not exists in DOM.
   }
 };
-
-export { getDay, showLecture };
