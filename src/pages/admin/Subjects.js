@@ -26,6 +26,7 @@ function MasterViewContents() {
   const { data, error } = useAPI();
 
   if (!data && !error) return <Loading />;
+  if (error) return <div className="message">Error: {error.message}</div>;
   if (data.error) return <div className="message">Error: {data.message}</div>;
   if (!data.subjects.length) return <div className="message">No subjects here</div>;
 

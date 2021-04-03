@@ -30,7 +30,8 @@ function WelcomeDate() {
   const { data, error, loading } = useLatestTimetable();
 
   if (loading) return null;
-  if (error || data.error) return <i>Error: {error.message || data.message}</i>;
+  if (error) return <i>Error: {error.message}</i>;
+  if (data.error) return <i>Error: {data.message}</i>;
   if (!data.date) return null;
 
   return <p>{new Date(data.date).toDateString()}</p>;

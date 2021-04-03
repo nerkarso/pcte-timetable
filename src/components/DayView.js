@@ -17,11 +17,31 @@ export default function DayView({ day, index }) {
   }, [classname]);
 
   if (loading) return <DaySkeleton />;
-  if (error || data.error) return <DayError>{error.message || data.message}</DayError>;
+  if (error) return <DayError>{error.message}</DayError>;
+  if (data.error) return <DayError>{data.message}</DayError>;
+  if (!data.timetable) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/error',
+          state: { message: 'Latest timetable not published' },
+        }}
+      />
+    );
+  }
 
   const timetable = JSON.parse(data.timetable);
 
-  if (!classname || !timetable[classname]) return <Redirect to="/welcome" />;
+  if (!classname || !timetable[classname]) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/error',
+          state: { message: 'Class does not exist' },
+        }}
+      />
+    );
+  }
 
   return <Day name={day} lectures={timetable[classname][index] ? timetable[classname][index] : []} key={index} />;
 }

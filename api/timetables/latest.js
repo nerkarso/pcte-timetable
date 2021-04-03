@@ -20,11 +20,18 @@ async function getLatest(req, res) {
   try {
     const timetable = await TimetableModel.findOne().where('published').equals(true).sort({ date: -1 });
     const classnames = await ClassnameModel.find().where('published').equals(true).sort({ name: 1 }).select('name');
-    res.json({
-      date: timetable.date,
-      classnames: classnames,
-      timetable: timetable.data,
-    });
+    if (timetable) {
+      res.json({
+        date: timetable.date,
+        classnames: classnames,
+        timetable: timetable.data,
+      });
+    } else {
+      res.status(404).json({
+        error: true,
+        message: 'The latest timetable has not been published',
+      });
+    }
   } catch (ex) {
     res.status(500).json({
       error: true,
