@@ -4,8 +4,10 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+  font-size: inherit;
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
   transition: background-color, opacity 0.3s;
 
   &:active,
@@ -16,6 +18,7 @@
 
 .button--default {
   background: var(--background-2);
+  color: var(--text);
   min-width: 5rem;
 }
 
