@@ -8,14 +8,14 @@ import React from 'react';
 import { Calendar } from 'react-feather';
 import 'styles/FloatingButton.scss';
 
+let headerTitle;
+let closeTitle;
+let modalBody;
+
 export default function ButtonShowToday() {
   const { isToastShown, setToastShown } = useToast();
   const { isModalShown, toggleModalShown } = useModal();
   const { slideIndex, setSlideIndex } = useSlide();
-
-  let headerTitle;
-  let closeTitle;
-  let modalBody;
 
   const showToday = () => {
     if (getDay() === slideIndex) {
