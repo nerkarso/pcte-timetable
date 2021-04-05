@@ -35,6 +35,7 @@ export default function ButtonChooseClassname() {
               className={`list__item${classname === item.name ? ' list__item--active' : ''}`}
               onClick={() => {
                 setClassname(item.name);
+                toggleModalShown();
                 trackEvent('Class', 'Chose this Class', item.name);
                 history.push('/');
               }}
