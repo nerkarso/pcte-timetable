@@ -12,12 +12,7 @@ export const initGA = () => {
 };
 
 export const logPageView = (title) => {
-  ReactGA.pageview(
-    JSON.stringify({
-      path: window.location.pathname,
-      title: title || document.title,
-    }),
-  );
+  ReactGA.pageview(window.location.pathname, null, title ? title : document.title);
 };
 
 export const trackEvent = (category, action, label) => {
