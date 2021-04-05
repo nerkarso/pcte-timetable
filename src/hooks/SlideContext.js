@@ -1,4 +1,4 @@
-import { getDay } from 'helpers/index';
+import { getDay } from 'helpers';
 import React, { createContext, useContext, useState } from 'react';
 
 const initialState = {

@@ -1,17 +1,16 @@
 import ButtonShowToday from 'components/ButtonShowToday';
-import DayView from 'components/DayView';
+import DayError from 'components/DayError';
+import DaySkeleton from 'components/DaySkeleton';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import SwipeableViewArea from 'components/SwipeableViewArea';
 import Tabs from 'components/Tabs';
 import { initGA, logPageView, trackEvent } from 'googleAnalytics';
-import { weekdays } from 'helpers';
-import { useSlide } from 'hooks/SlideContext';
+import { useClassname } from 'hooks/ClassnameContext';
+import { useLatestTimetable } from 'hooks/useLatestTimetable';
 import React, { useEffect } from 'react';
-import SwipeableViews from 'react-swipeable-views';
-import { bindKeyboard } from 'react-swipeable-views-utils';
+import { Redirect } from 'react-router-dom';
 import 'styles/Timetable.scss';
-
-const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 export default function Timetable() {
   useEffect(() => {
@@ -28,7 +27,7 @@ export default function Timetable() {
   return (
     <>
       <Header />
-      <SwipeableViewArea />
+      <Main />
       <ButtonShowToday />
       <Footer>
         <Tabs />
@@ -37,26 +36,37 @@ export default function Timetable() {
   );
 }
 
-function SwipeableViewArea() {
-  const { slideIndex, setSlideIndex } = useSlide();
+function Main() {
+  const { data, error, loading } = useLatestTimetable();
+  const { classname } = useClassname();
 
-  return (
-    <BindKeyboardSwipeableViews
-      className="main"
-      containerStyle={{
-        height: '100%',
-      }}
-      index={slideIndex}
-      onChangeIndex={(index) => setSlideIndex(index)}
-      springConfig={{
-        duration: '0.5s',
-        easeFunction: 'cubic-bezier(0.55, 0, 0.1, 1)',
-        delay: '0s',
-      }}
-      resistance>
-      {weekdays.map((day, index) => (
-        <DayView day={day} index={index} key={index} />
-      ))}
-    </BindKeyboardSwipeableViews>
-  );
+  if (loading) return <DaySkeleton />;
+  if (error) return <DayError>{error.message}</DayError>;
+  if (data.error) return <DayError>{data.message}</DayError>;
+  if (!classname) return <Redirect to="/welcome" />;
+  if (!data.timetable) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/error',
+          state: { message: 'Latest timetable not published' },
+        }}
+      />
+    );
+  }
+
+  const timetable = JSON.parse(data.timetable);
+
+  if (!timetable[classname]) {
+    return (
+      <Redirect
+        to={{
+          pathname: '/error',
+          state: { message: 'Class does not exist' },
+        }}
+      />
+    );
+  }
+
+  return <SwipeableViewArea timetable={timetable} classname={classname} />;
 }
