@@ -20,7 +20,7 @@ export default withAllowedMethods(withDbConnect(handler), ['GET', 'POST', 'PATCH
  */
 async function getAll(req, res) {
   try {
-    const timetables = await TimetableModel.find().sort({ name: -1 });
+    const timetables = await TimetableModel.find().sort({ date: -1 });
     return res.json({ count: timetables.length, timetables });
   } catch (ex) {
     return res.status(500).json({
