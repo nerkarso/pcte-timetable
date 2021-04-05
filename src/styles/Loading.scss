@@ -1,5 +1,9 @@
 @import 'colors';
 
+$loadingBarWidth: 64px;
+$loadingBarHeight: 10px;
+$loadingIndicatorWidth: 24px;
+
 .loading {
   padding: 1rem 0;
 }
@@ -13,25 +17,24 @@
 .loading__bar {
   background-color: map-get($indigo, 'accent-1');
   border-radius: 0.25rem;
-  width: 4rem;
-  height: 0.5rem;
+  width: $loadingBarWidth;
+  height: $loadingBarHeight;
   overflow: hidden;
 }
 
 .loading__indicator {
   background-color: map-get($indigo, 'accent-4');
   border-radius: 0.25rem;
-  width: 1rem;
+  width: $loadingIndicatorWidth;
   height: 100%;
-  animation: bounce 1s ease infinite forwards;
+  animation: bounce 1s ease infinite;
 }
 
 @keyframes bounce {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-$loadingIndicatorWidth);
   }
   100% {
-    transform: translateX(300%);
-    width: 1.5rem;
+    transform: translateX($loadingBarWidth);
   }
 }
