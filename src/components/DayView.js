@@ -11,10 +11,10 @@ export default function DayView({ day, index }) {
   const { classname } = useClassname();
 
   useEffect(() => {
-    if (classname && getDay() !== -1) {
-      setTimeout(showLecture, 1000);
+    if (!loading && classname && getDay() !== -1) {
+      setTimeout(showLecture, 500);
     }
-  }, [classname]);
+  }, [loading, classname]);
 
   if (loading) return <DaySkeleton />;
   if (error) return <DayError>{error.message}</DayError>;
