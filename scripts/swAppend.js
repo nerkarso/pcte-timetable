@@ -7,7 +7,7 @@ workbox.routing.registerRoute(
     cacheName: 'latest-timetable',
     plugins: [
       new workbox.expiration.Plugin({
-        maxAgeSeconds: 24 * 60 * 60, // 1 day
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
       }),
     ],
   }),
