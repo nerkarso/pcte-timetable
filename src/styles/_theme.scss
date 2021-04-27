@@ -22,6 +22,8 @@ html {
   --text-1: #{mix(map-get($shades, 'white'), $darken, 10%)};
   --text-2: #{mix(map-get($shades, 'white'), $darken, 20%)};
   --text-3: #{mix(map-get($shades, 'white'), $darken, 30%)};
+  --color-shine-1: #{mix(map-get($shades, 'black'), $lighten, 6%)};
+  --color-shine-2: #{mix(map-get($shades, 'black'), $lighten, 1%)};
 }
 
 html[theme='dark'] {
@@ -34,4 +36,6 @@ html[theme='dark'] {
   --text-1: #{mix(map-get($shades, 'black'), $lighten, 10%)};
   --text-2: #{mix(map-get($shades, 'black'), $lighten, 20%)};
   --text-3: #{mix(map-get($shades, 'black'), $lighten, 30%)};
+  --color-shine-1: #{mix(map-get($shades, 'white'), $darken, 15%)};
+  --color-shine-2: #{mix(map-get($shades, 'white'), $darken, 20%)};
 }
