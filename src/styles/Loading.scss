@@ -15,7 +15,7 @@ $loadingIndicatorWidth: 24px;
 }
 
 .loading__bar {
-  background-color: map-get($indigo, 'accent-1');
+  background-color: var(--background-2);
   border-radius: 0.25rem;
   width: $loadingBarWidth;
   height: $loadingBarHeight;
@@ -24,10 +24,11 @@ $loadingIndicatorWidth: 24px;
 
 .loading__indicator {
   background-color: map-get($indigo, 'accent-4');
+  box-shadow: 0 0 6px map-get($indigo, 'accent-4');
   border-radius: 0.25rem;
   width: $loadingIndicatorWidth;
   height: 100%;
-  animation: bounce 1s ease infinite;
+  animation: bounce 1.5s ease infinite;
 }
 
 @keyframes bounce {
@@ -35,6 +36,6 @@ $loadingIndicatorWidth: 24px;
     transform: translateX(-$loadingIndicatorWidth);
   }
   100% {
-    transform: translateX($loadingBarWidth);
+    transform: translateX($loadingBarWidth + $loadingIndicatorWidth);
   }
 }

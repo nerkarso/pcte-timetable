@@ -5,7 +5,8 @@
   background: var(--background-1);
   border-top: 1px solid var(--background-2);
   height: 65px;
-  transition: background, border 0.3s;
+  flex-shrink: 0;
+  transition: background-color, border 0.3s;
   @include fade-in;
 }
 
