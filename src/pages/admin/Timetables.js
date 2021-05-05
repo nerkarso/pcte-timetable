@@ -2,8 +2,10 @@ import ListItem from 'components/ListItem';
 import MasterDetailsView from 'components/MasterDetailsView';
 import Button from 'elements/Button';
 import Loading from 'elements/Loading';
+import Modal from 'elements/Modal';
 import TextField from 'elements/TextField';
 import { useMasterDetails } from 'hooks/MasterDetailsContext';
+import { useModal } from 'hooks/useModal';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
@@ -22,6 +24,7 @@ function useAPI() {
 }
 
 function MasterViewContents() {
+  const { isModalShown, toggleModalShown } = useModal(true);
   const { data, error } = useAPI();
 
   if (!data && !error) return <Loading />;
@@ -35,6 +38,21 @@ function MasterViewContents() {
 
   return (
     <div className="list">
+      <Button type="button" className="button--primary mb-4" onClick={toggleModalShown}>
+        Import spreadsheet
+      </Button>
+      <Modal
+        large
+        headerTitle="Import spreadsheet"
+        closeTitle="Cancel"
+        primaryActionTitle="Import"
+        primaryActionHandler={() => {}}
+        isModalShown={isModalShown}
+        toggleModalShown={toggleModalShown}>
+        <div className="modal__content">
+          <input type="file" name="upload" id="upload" />
+        </div>
+      </Modal>
       {data.timetables.map((item, i) => (
         <MasterListItem item={{ name: formatDate(item.date), ...item }} key={i} />
       ))}

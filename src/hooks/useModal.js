@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-export function useModal() {
-  const [isModalShown, setIsModalShown] = useState(false);
+export function useModal(initialState = false) {
+  const [isModalShown, setIsModalShown] = useState(initialState);
 
   return {
     isModalShown,

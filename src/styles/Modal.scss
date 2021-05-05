@@ -39,7 +39,26 @@
   overflow-y: auto;
 }
 
+.modal__content {
+  padding: 0.5rem 0rem;
+}
+
 .modal__footer {
   border-top: 1px solid var(--background-2);
   padding: 1rem;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.modal--large {
+  .modal__container {
+    max-width: 1024px;
+  }
+  .modal__footer > * {
+    flex: 0;
+  }
 }
