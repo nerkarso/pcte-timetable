@@ -38,4 +38,8 @@ html[theme='dark'] {
   --text-3: #{mix(map-get($shades, 'black'), $lighten, 30%)};
   --color-shine-1: #{mix(map-get($shades, 'white'), $darken, 15%)};
   --color-shine-2: #{mix(map-get($shades, 'white'), $darken, 20%)};
+
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
 }

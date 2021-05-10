@@ -6,7 +6,7 @@ export default function DaySkeleton() {
       <div className="day__container">
         <h1 className="day__heading day__heading--skeleton">Day</h1>
         <div className="day__grid">
-          {[1, 2, 3].map((i) => (
+          {[1, 2, 3, 4, 5, 6, 7].map((i) => (
             <LectureSkeleton key={i} />
           ))}
         </div>

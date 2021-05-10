@@ -12,7 +12,9 @@
     "postbuild": "node scripts/swAppend.js"
   },
   "dependencies": {
+    "formidable": "^1.2.2",
     "mongoose": "5.11.15",
+    "node-xlsx": "^0.16.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-feather": "^2.0.8",

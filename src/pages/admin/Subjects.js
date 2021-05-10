@@ -141,6 +141,7 @@ function DetailsForm() {
         name="color"
         options={[
           { value: '', label: 'Select a color' },
+          { value: 'grey', label: 'Grey' },
           { value: 'red', label: 'Red' },
           { value: 'yellow', label: 'Yellow' },
           { value: 'green', label: 'Green' },

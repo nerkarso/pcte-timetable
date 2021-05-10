@@ -4,9 +4,11 @@ import Button from 'elements/Button';
 import Loading from 'elements/Loading';
 import Modal from 'elements/Modal';
 import TextField from 'elements/TextField';
+import Toast from 'elements/Toast';
 import { useMasterDetails } from 'hooks/MasterDetailsContext';
 import { useModal } from 'hooks/useModal';
-import React, { useEffect } from 'react';
+import { useToast } from 'hooks/useToast';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useSWR from 'swr';
 
@@ -23,8 +25,90 @@ function useAPI() {
   return useSWR('/api/timetables');
 }
 
+function ModalImportSheet() {
+  const { isModalShown, toggleModalShown } = useModal(false);
+  const { isToastShown, setToastShown } = useToast();
+  const [toastMessage, setToastMessage] = useState();
+  const [isLoading, setIsLoading] = useState(false);
+  const { setDetails } = useMasterDetails();
+
+  const hideToast = () => setToastShown(false);
+  const showToast = (message) => {
+    clearTimeout(hideToast);
+    setToastMessage(message);
+    setToastShown(true);
+    setTimeout(hideToast, 3000);
+  };
+
+  const handleImport = async () => {
+    const fileUploader = document.querySelector('#fileUploader');
+
+    if (fileUploader.files.length < 1) {
+      showToast('File is missing');
+      return;
+    }
+
+    if (fileUploader.files[0].type.search(/\.xlsx|\.xls/) === -1) {
+      showToast('Only Excel files allowed');
+      return;
+    }
+
+    try {
+      setIsLoading(true);
+      const formData = new FormData();
+      formData.append('file', fileUploader.files[0]);
+      const data = await (
+        await fetch('/api/timetables/import', {
+          method: 'POST',
+          body: formData,
+        })
+      ).json();
+      if (data.error) {
+        showToast(data.message);
+      } else {
+        toggleModalShown();
+        setDetails({
+          date: new Date().toJSON().substr(0, 10),
+          data: JSON.stringify(data.data),
+          published: true,
+        });
+      }
+    } catch (ex) {
+      showToast(ex.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <>
+      <Button type="button" className="button--primary mb-4" onClick={toggleModalShown}>
+        Import spreadsheet
+      </Button>
+      <Modal
+        headerTitle="Import spreadsheet"
+        closeTitle="Cancel"
+        primaryActionTitle="Import"
+        primaryActionHandler={handleImport}
+        isModalShown={isModalShown}
+        toggleModalShown={toggleModalShown}>
+        {isLoading ? (
+          <div className="place-items-center">
+            <Loading>Importing...</Loading>
+          </div>
+        ) : (
+          <div className="modal__content">
+            <input type="file" id="fileUploader" className="file-uploader mb-4" accept="application/*" />
+            <p className="text-info">Only .xlsx and .xls files allowed</p>
+          </div>
+        )}
+      </Modal>
+      <Toast isToastShown={isToastShown}>{toastMessage}</Toast>
+    </>
+  );
+}
+
 function MasterViewContents() {
-  const { isModalShown, toggleModalShown } = useModal(true);
   const { data, error } = useAPI();
 
   if (!data && !error) return <Loading />;
@@ -38,21 +122,7 @@ function MasterViewContents() {
 
   return (
     <div className="list">
-      <Button type="button" className="button--primary mb-4" onClick={toggleModalShown}>
-        Import spreadsheet
-      </Button>
-      <Modal
-        large
-        headerTitle="Import spreadsheet"
-        closeTitle="Cancel"
-        primaryActionTitle="Import"
-        primaryActionHandler={() => {}}
-        isModalShown={isModalShown}
-        toggleModalShown={toggleModalShown}>
-        <div className="modal__content">
-          <input type="file" name="upload" id="upload" />
-        </div>
-      </Modal>
+      <ModalImportSheet />
       {data.timetables.map((item, i) => (
         <MasterListItem item={{ name: formatDate(item.date), ...item }} key={i} />
       ))}
@@ -105,7 +175,7 @@ function DetailsForm() {
   };
 
   const onSubmit = (data) => {
-    if (details) {
+    if (details._id) {
       // Update
       fetch(`/api/timetables/${details._id}`, {
         method: 'PATCH',
