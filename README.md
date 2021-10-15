@@ -26,7 +26,7 @@
 ## Stack
 
 - React `16.x`
-- SASS `4.x`
+- Sass `4.x`
 - node-xlsx `0.x`
 - Mongoose `5.x`
 
@@ -52,7 +52,7 @@ npm install -g vercel
 
 3. Create a MongoDB database. You can host it yourself or use [MongoDB Atlas](https://docs.atlas.mongodb.com/getting-started/).
 
-4. Copy the connection string. (e.g. `mongodb+srv://<username>:<password>@clustername.mongodb.net/dbname`)
+4. Copy the connection string. (e.g. `mongodb://localhost/pcte-timetable` or `mongodb+srv://<username>:<password>@clustername.mongodb.net/pcte-timetable`)
 
 5. Add this environment variable with the connection string in the `.env` file.
 
@@ -67,6 +67,8 @@ MONGODB_URI=
 > NOTE: This requires a Vercel account.
 
 ```sh
+yarn watch
+# or
 vercel dev
 ```
 

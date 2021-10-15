@@ -16,7 +16,15 @@ export default function Timetables() {
   return (
     <div className="admin__container">
       <h1 className="admin__heading">Timetables</h1>
-      <MasterDetailsView masterView={<MasterViewContents />} detailsView={<DetailsForm />} />
+      <MasterDetailsView
+        masterView={
+          <>
+            <ModalImportSheet />
+            <MasterViewContents />
+          </>
+        }
+        detailsView={<DetailsForm />}
+      />
     </div>
   );
 }
@@ -48,7 +56,7 @@ function ModalImportSheet() {
       return;
     }
 
-    if (fileUploader.files[0].type.search(/\.xlsx|\.xls/) === -1) {
+    if (fileUploader.files[0].name.search(/\.xlsx|\.xls/) === -1) {
       showToast('Only Excel files allowed');
       return;
     }
@@ -85,13 +93,7 @@ function ModalImportSheet() {
       <Button type="button" className="button--primary mb-4" onClick={toggleModalShown}>
         Import spreadsheet
       </Button>
-      <Modal
-        headerTitle="Import spreadsheet"
-        closeTitle="Cancel"
-        primaryActionTitle="Import"
-        primaryActionHandler={handleImport}
-        isModalShown={isModalShown}
-        toggleModalShown={toggleModalShown}>
+      <Modal headerTitle="Import spreadsheet" closeTitle="Cancel" primaryActionTitle="Import" primaryActionHandler={handleImport} isModalShown={isModalShown} toggleModalShown={toggleModalShown}>
         {isLoading ? (
           <div className="place-items-center">
             <Loading>Importing...</Loading>
@@ -122,7 +124,6 @@ function MasterViewContents() {
 
   return (
     <div className="list">
-      <ModalImportSheet />
       {data.timetables.map((item, i) => (
         <MasterListItem item={{ name: formatDate(item.date), ...item }} key={i} />
       ))}
